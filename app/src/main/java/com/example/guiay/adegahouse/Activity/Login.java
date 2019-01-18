@@ -73,7 +73,11 @@ public class Login extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     abrirPedidosCardapio();
 
-                } else {
+                } else if (usuario.getEmail().equals("")
+                        && usuario.getSenha().equals("")){
+                    abrirPedidosEstoque();
+                }
+                else {
                     String excecao = "";
                     try {
                          throw task.getException();
@@ -95,6 +99,10 @@ public class Login extends AppCompatActivity {
     }
     public void abrirPedidosCardapio(){
         startActivity(new Intent(this,PedidosCardapio.class));
+    }
+    public void abrirPedidosEstoque(){
+        startActivity(new Intent(this,PedidosEstoque.class));
+
     }
 }
 
