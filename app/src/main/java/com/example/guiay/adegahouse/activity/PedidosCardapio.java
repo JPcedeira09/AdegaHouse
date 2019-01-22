@@ -1,4 +1,4 @@
-package com.example.guiay.adegahouse.Activity;
+package com.example.guiay.adegahouse.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.example.guiay.adegahouse.Activity;
+package com.example.guiay.adegahouse.activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -73,8 +73,8 @@ public class Login extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     abrirPedidosCardapio();
 
-                } else if (usuario.getEmail().equals("")
-                        && usuario.getSenha().equals("")){
+                } else if (usuario.getEmail().equals("adega.house@gmail.com")
+                        && usuario.getSenha().equals("adega123")){
                     abrirPedidosEstoque();
                 }
                 else {
@@ -100,6 +100,7 @@ public class Login extends AppCompatActivity {
     public void abrirPedidosCardapio(){
         startActivity(new Intent(this,PedidosCardapio.class));
     }
+
     public void abrirPedidosEstoque(){
         startActivity(new Intent(this,PedidosEstoque.class));
 

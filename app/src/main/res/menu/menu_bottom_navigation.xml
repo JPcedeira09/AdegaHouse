@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <item android:id="@+id/ic_home"
-            android:icon="@drawable/ic_list_preto_24dp"
-            android:title="Pedidos realizados" />
-    <item android:id="@+id/ic_estoque"
-        android:icon="@drawable/ic_restaurant_preto_24dp"
-        android:title="Estoque" />
+    <item android:id="@+id/ic_pedidos"
+        android:icon="@drawable/ic_lista_preto_24dp"
+        android:title="Pedidos Realizados"/>
 
+    <item android:id="@+id/ic_estoque"
+        android:icon="@drawable/ic_loja_preto_24dp"
+        android:title="Estoque"/>
+
+    <item android:id="@+id/ic_adicionar"
+        android:icon="@drawable/ic_add_preto_24dp"
+        android:title="Adicionar produto"/>
 
 </menu>

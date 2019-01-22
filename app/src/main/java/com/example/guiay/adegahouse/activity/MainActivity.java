@@ -1,12 +1,10 @@
-package com.example.guiay.adegahouse.Activity;
+package com.example.guiay.adegahouse.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.guiay.adegahouse.Activity.Cadastro;
-import com.example.guiay.adegahouse.Activity.Login;
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.google.firebase.auth.FirebaseAuth;
