@@ -39,11 +39,12 @@ public class MainActivity extends AppCompatActivity {
     public void usuarioLogado(){
         autenficaçao = ConfiguracaoFirebase.getFirebaseAutentificacao();
 
+
         if (autenficaçao.getCurrentUser() !=null ){
             abrirPedidosCardapio();
         }
     }
     public void abrirPedidosCardapio(){
-        startActivity(new Intent(this,PedidosCardapio.class));
+        startActivity(new Intent(this,TelaCardapio1.class));
     }
 }

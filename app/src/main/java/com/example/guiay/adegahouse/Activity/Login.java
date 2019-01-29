@@ -94,7 +94,7 @@ public class Login extends AppCompatActivity {
 
     }
     public void abrirPedidosCardapio(){
-        startActivity(new Intent(this,PedidosCardapio.class));
+        startActivity(new Intent(this,TelaCardapio1.class));
     }
 }
 
