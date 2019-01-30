@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "726190883799",
-    "firebase_url": "https://adegahoudeguiay.firebaseio.com",
-    "project_id": "adegahoudeguiay",
-    "storage_bucket": "adegahoudeguiay.appspot.com"
+    "project_number": "92058722364",
+    "firebase_url": "https://adega-48d70.firebaseio.com",
+    "project_id": "adega-48d70",
+    "storage_bucket": "adega-48d70.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:726190883799:android:153e445ed4fa2920",
+        "mobilesdk_app_id": "1:92058722364:android:153e445ed4fa2920",
         "android_client_info": {
           "package_name": "com.example.guiay.adegahouse"
         }
       },
       "oauth_client": [
         {
-          "client_id": "726190883799-vrchr5n63ltou2ivg34vl8bkfdns8vmm.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.guiay.adegahouse",
-            "certificate_hash": "1cd464796836b6724897bc3f88d55fb715636a05"
-          }
-        },
-        {
-          "client_id": "726190883799-vkb1s4rnlq0i0ntg1tgv7gvmnsninkr8.apps.googleusercontent.com",
+          "client_id": "92058722364-uv64g6g2075vn75ee6jgq33b2fj4f1h2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBDPdtDWqdiRn-OnMv0kdwMfRpPUZBk7ss"
+          "current_key": "AIzaSyCQqsE8af-v4tvujNFbwo3qjygnPuMr1RA"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "726190883799-vkb1s4rnlq0i0ntg1tgv7gvmnsninkr8.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

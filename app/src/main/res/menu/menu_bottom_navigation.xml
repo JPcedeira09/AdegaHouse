@@ -9,8 +9,9 @@
         android:icon="@drawable/ic_loja_preto_24dp"
         android:title="Estoque"/>
 
-    <item android:id="@+id/ic_adicionar"
+    <item
+        android:id="@+id/ic_adicionar"
         android:icon="@drawable/ic_add_preto_24dp"
-        android:title="Adicionar produto"/>
+        android:title="Adicionar produto" />
 
 </menu>

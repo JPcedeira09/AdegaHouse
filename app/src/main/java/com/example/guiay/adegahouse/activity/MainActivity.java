@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart() {
+   protected void onStart() {
         super.onStart();
-        usuarioLogado();
+         usuarioLogado();
     }
 
     public void btCadastrar(View view){
@@ -42,6 +42,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void abrirPedidosCardapio(){
-        startActivity(new Intent(this,PedidosCardapio.class));
+        startActivity(new Intent(this,PedidosCardapio.class)); //(Fiz Alteraçao aqui e rodou enao o problema esta no else if )
     }
 }

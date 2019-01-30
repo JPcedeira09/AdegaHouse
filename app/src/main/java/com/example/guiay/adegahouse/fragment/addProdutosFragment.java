@@ -12,10 +12,11 @@ import com.example.guiay.adegahouse.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class exemplo2Fragment extends Fragment {
+public class addProdutosFragment extends Fragment {
 
 
-    public exemplo2Fragment() {
+
+    public addProdutosFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +25,7 @@ public class exemplo2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exemplo2, container, false);
+        return inflater.inflate(R.layout.fragment_add_produto, container, false);
     }
 
 }

@@ -3,16 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.exemplo2Fragment">
+    tools:context=".fragment.pedidosRealizadosFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Estoque"
+        android:text="Pedidos Realizados"
         android:textColorHint="@android:color/white"
         android:textColorLink="@android:color/white"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>

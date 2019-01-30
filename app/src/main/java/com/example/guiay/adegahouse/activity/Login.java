@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.guiay.adegahouse.R;
+import com.example.guiay.adegahouse.Teste;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -73,8 +74,8 @@ public class Login extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     abrirPedidosCardapio();
 
-                } else if (usuario.getEmail().equals("adega.house@gmail.com")
-                        && usuario.getSenha().equals("adega123")){
+                } else if (usuario.getEmail().equals("teste@teste.com")
+                        && usuario.getSenha().equals("teste123")){
                     abrirPedidosEstoque();
                 }
                 else {
@@ -98,11 +99,12 @@ public class Login extends AppCompatActivity {
 
     }
     public void abrirPedidosCardapio(){
+
         startActivity(new Intent(this,PedidosCardapio.class));
     }
 
     public void abrirPedidosEstoque(){
-        startActivity(new Intent(this,PedidosEstoque.class));
+        startActivity(new Intent(this, PedidosEstoque.class));
 
     }
 }
