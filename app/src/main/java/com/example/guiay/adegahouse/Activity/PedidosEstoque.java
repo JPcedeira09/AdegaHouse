@@ -11,12 +11,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
-import com.example.guiay.adegahouse.fragment.exemplo2Fragment;
-import com.example.guiay.adegahouse.fragment.exemplo3Fragment;
-import com.example.guiay.adegahouse.fragment.exemploFragment;
+import com.example.guiay.adegahouse.fragment.addProdutosFragment;
+import com.example.guiay.adegahouse.fragment.estoqueFragment;
+import com.example.guiay.adegahouse.fragment.pedidosRealizadosFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -24,12 +25,13 @@ public class PedidosEstoque extends AppCompatActivity {
 
     private FirebaseAuth autenticacao;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedidos_estoque);
         //Sumir Action Bar
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); // Para o layout preencher toda tela do cel (remover a barra de tit.)
+       // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); // Para o layout preencher toda tela do cel (remover a barra de tit.)
         //getSupportActionBar().hide();
 
         //Confugurar toolbar
@@ -48,7 +50,7 @@ public class PedidosEstoque extends AppCompatActivity {
     /**
      * Metodo responsavel  por criar o BottomNavigation
      */
-    public void configuraBottomNavigation(){
+    public void configuraBottomNavigation() {
         BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottomNavigation);
         bottomNavigationViewEx.enableAnimation(true);
         bottomNavigationViewEx.enableItemShiftingMode(false);
@@ -56,35 +58,36 @@ public class PedidosEstoque extends AppCompatActivity {
         bottomNavigationViewEx.setTextVisibility(true);
 
         //Habilitar Navegaçao
-         habilitarNavegaçao(bottomNavigationViewEx);
+        habilitarNavegaçao(bottomNavigationViewEx);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.viewPage,new exemploFragment()).commit();
+        fragmentTransaction.replace(R.id.viewPage, new pedidosRealizadosFragment()).commit();
 
 
     }
 
     /**
      * Metodo responsavel por tratar eventos de click na BottomNavigation
+     *
      * @param viewEx
      */
 
-    private void habilitarNavegaçao(BottomNavigationViewEx viewEx){
+    private void habilitarNavegaçao(BottomNavigationViewEx viewEx) {
         viewEx.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.ic_pedidos:
-                        fragmentTransaction.replace(R.id.viewPage,new exemploFragment()).commit();
+                        fragmentTransaction.replace(R.id.viewPage, new pedidosRealizadosFragment()).commit();
                         return true;
                     case R.id.ic_estoque:
-                    fragmentTransaction.replace(R.id.viewPage,new exemplo2Fragment()).commit();
-                    return true;
-                    case  R.id.ic_adicionar:
-                        fragmentTransaction.replace(R.id.viewPage,new exemplo3Fragment()).commit();
+                        fragmentTransaction.replace(R.id.viewPage, new estoqueFragment()).commit();
+                        return true;
+                    case R.id.ic_adicionar:
+                        fragmentTransaction.replace(R.id.viewPage, new addProdutosFragment()).commit();
                         return true;
 
                 }
@@ -94,11 +97,12 @@ public class PedidosEstoque extends AppCompatActivity {
 
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu );
+        inflater.inflate(R.menu.menu_main, menu);
 
         return super.onCreateOptionsMenu(menu);
 
@@ -107,29 +111,24 @@ public class PedidosEstoque extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
-            case R.id.menu_sair :
+        switch (item.getItemId()) {
+            case R.id.menu_sair:
                 deslogarUsuario();
                 startActivity(new Intent(getApplicationContext(), Login.class));
-                  break;
+                break;
         }
 
         return super.onOptionsItemSelected(item);
     }
-    private  void deslogarUsuario(){
-              try {
-                  autenticacao.signOut();
 
-              } catch (Exception e){
+    private void deslogarUsuario() {
+        try {
+            autenticacao.signOut();
 
-                  e.printStackTrace();
-              }
+        } catch (Exception e) {
 
-
+            e.printStackTrace();
+        }
 
     }
-
-
-
-
 }
