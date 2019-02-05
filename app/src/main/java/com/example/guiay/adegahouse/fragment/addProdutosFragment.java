@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.activity.Login;
+import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.model.AdicionarProduto;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
@@ -33,9 +34,9 @@ import static android.widget.Toast.LENGTH_SHORT;
  */
 public class addProdutosFragment extends Fragment {
 
-    private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference("Adega" );
     private EditText editNome,editDescricao,editQtq,editValor;
     private Button adicionarProduto;
+    private DatabaseReference firebaseRef;
 
 
 
@@ -56,7 +57,30 @@ public class addProdutosFragment extends Fragment {
             editQtq = view.findViewById(R.id.editQtd);
             editValor = view.findViewById(R.id.editValor);
             adicionarProduto = view.findViewById(R.id.addProduto);
+            firebaseRef = ConfiguracaoFirebase.getFirebase();
 
+            //Recuperar dados da empresa
+            /*DatabaseReference addProdutoRef = firebaseRef.child("Teste").child("sera??");
+            addProdutoRef.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.getValue() !=null){
+                        AdicionarProduto adicionarProduto = dataSnapshot.getValue(AdicionarProduto.class);
+                        editNome.setText(adicionarProduto.getNome());
+                        editDescricao.setText(adicionarProduto.getDescricao());
+                        editQtq.setText(adicionarProduto.getQuantidade());
+                        editValor.setText(adicionarProduto.getValor());
+
+
+                    }
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });*/
 
             //Validar si os dados foram preenchidos
             adicionarProduto.setOnClickListener(new View.OnClickListener() {
@@ -75,8 +99,8 @@ public class addProdutosFragment extends Fragment {
                                     AdicionarProduto adicionarProduto = new AdicionarProduto();
                                     adicionarProduto.setNome(nome);
                                     adicionarProduto.setDescricao(descricao);
-                                    adicionarProduto.setQuantidade(Double.parseDouble(quantidade));
-                                    adicionarProduto.setValor(Double.parseDouble(valor));
+                                    adicionarProduto.setQuantidade(quantidade);
+                                    adicionarProduto.setValor(valor);
                                     adicionarProduto.salvar();
                                     Toast.makeText(getActivity(),"Cadastro realizado com sucesso",Toast.LENGTH_SHORT).show();
 
@@ -106,25 +130,6 @@ public class addProdutosFragment extends Fragment {
             });
 
 
-
-
-
-            //Salvar dados no Firebase
-            DatabaseReference produtos = referencia.child("Teste");
-
-
-            //Recup
-            produtos.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    Log.i("FIREBASE", dataSnapshot.getValue().toString());
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                }
-            });
 
             // Inflate the layout for this fragment
             return view;

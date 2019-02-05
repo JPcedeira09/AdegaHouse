@@ -3,23 +3,27 @@ package com.example.guiay.adegahouse.model;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class AdicionarProduto {
 
     private String descricao;
     private boolean disponivel;
     private String nome;
-    private double quantidade;
-    private double valor;
+    private String quantidade;
+    private String valor;
+
 
 
 
     public AdicionarProduto() {
+
     }
 
     public void salvar(){
+
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference addProdutoRef =firebaseRef.child("Teste").child("sera??");
+        DatabaseReference addProdutoRef =firebaseRef.child("Produtos").child(this.nome);
            addProdutoRef.setValue(this);
 
     }
@@ -49,19 +53,19 @@ public class AdicionarProduto {
         this.nome = nome;
     }
 
-    public double getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(double quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 
-    public double getValor() {
+    public String getValor() {
         return valor;
     }
 
-    public void setValor(double valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 }
