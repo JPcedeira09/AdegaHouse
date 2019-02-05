@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.guiay.adegahouse.R;
-import com.example.guiay.adegahouse.Teste;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
