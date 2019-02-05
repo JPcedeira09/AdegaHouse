@@ -78,6 +78,7 @@ public class addProdutosFragment extends Fragment {
                                     adicionarProduto.setQuantidade(Double.parseDouble(quantidade));
                                     adicionarProduto.setValor(Double.parseDouble(valor));
                                     adicionarProduto.salvar();
+                                    Toast.makeText(getActivity(),"Cadastro realizado com sucesso",Toast.LENGTH_SHORT).show();
 
 
                                 }else{

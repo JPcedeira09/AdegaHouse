@@ -19,7 +19,7 @@ public class AdicionarProduto {
 
     public void salvar(){
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference addProdutoRef =firebaseRef.child("Produtos");
+        DatabaseReference addProdutoRef =firebaseRef.child("Teste").child("sera??");
            addProdutoRef.setValue(this);
 
     }
