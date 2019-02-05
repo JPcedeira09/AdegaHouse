@@ -19,7 +19,10 @@
         <activity android:name=".Activity.Login" />
         <activity android:name=".Activity.Cadastro" />
         <activity android:name=".Activity.PedidosCardapio" />
-        <activity android:name=".Activity.TelaCardapio1"></activity>
+        <activity android:name=".Activity.TelaCardapio1" />
+        <activity android:name=".Activity.ConfiguracoesUsuarioActivity">
+            android:parentActivityName=".activity.TelaCardapio1"
+        </activity>
     </application>
 
 </manifest>

@@ -93,6 +93,10 @@ public class TelaCardapio1 extends AppCompatActivity {
                 deslogarUsuario();
                 startActivity(new Intent(getApplicationContext(), Login.class));
                 break;
+
+            case R.id.menu_Configuracoes :
+                abrirConfiguracoes();
+                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -105,6 +109,10 @@ public class TelaCardapio1 extends AppCompatActivity {
         }catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void abrirConfiguracoes(){
+        startActivity(new Intent(TelaCardapio1.this, ConfiguracoesUsuarioActivity.class));
     }
 
     private void iniciailizarComponentes(){
