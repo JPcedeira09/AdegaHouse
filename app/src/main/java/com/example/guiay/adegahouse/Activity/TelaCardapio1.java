@@ -1,23 +1,41 @@
 package com.example.guiay.adegahouse.Activity;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.design.internal.BottomNavigationItemView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Adapter;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
+import com.google.firebase.FirebaseError;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TelaCardapio1 extends AppCompatActivity {
 
     private FirebaseAuth autenticacao;
+    private DatabaseReference mDatabase;
 
+
+
+    private RecyclerView recyclerProdutosCardapio;
+    private DatabaseReference firebase;
 
 
     @Override
@@ -34,6 +52,14 @@ public class TelaCardapio1 extends AppCompatActivity {
         autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
 
         configuraBottomNavigation();
+
+        //configuracoes iniciais
+        iniciailizarComponentes();
+
+
+
+        //configurações database
+        mDatabase = FirebaseDatabase.getInstance().getReference();
     }
 
     public void configuraBottomNavigation(){
@@ -80,4 +106,55 @@ public class TelaCardapio1 extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-}
+
+    private void iniciailizarComponentes(){
+        recyclerProdutosCardapio = findViewById(R.id.recyclerProdutosCardapio);
+        new FirebaseDatabaseHelper().readProdutos(new FirebaseDatabaseHelper.DataStatus() {
+            @Override
+            public void DataIsLoaded(List<Produtos> produtos, List<String> keys) {
+                new RecyclerView_Config().setConfig(recyclerProdutosCardapio,TelaCardapio1.this,
+                        produtos, keys);
+            }
+
+            @Override
+            public void DataIsInserted() {
+
+            }
+
+            @Override
+            public void DataIsUpdated() {
+
+            }
+
+            @Override
+            public void DataIsDeleted() {
+
+            }
+        });
+    }
+
+    private void printDatabase(){
+
+        DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
+
+        System.out.println("print");
+
+        myRef.child("Adega").child("Produtos").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot chidSnap : dataSnapshot.getChildren()) {
+                    Produtos produtoValue = chidSnap.getValue(Produtos.class);
+                    System.out.println(produtoValue.getNome());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+
+    }
+
