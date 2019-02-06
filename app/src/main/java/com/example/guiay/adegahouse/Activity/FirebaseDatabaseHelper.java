@@ -15,10 +15,10 @@ public class FirebaseDatabaseHelper {
 
     private FirebaseDatabase mDatabase;
     private DatabaseReference mReferenceProdutos;
-    private List<Produtos> produtos = new ArrayList<>();
+    private List<Produto> produtos = new ArrayList<>();
 
     public interface DataStatus{
-        void DataIsLoaded (List<Produtos> produtos, List<String> keys);
+        void DataIsLoaded (List<Produto> produtos, List<String> keys);
         void DataIsInserted();
         void DataIsUpdated();
         void DataIsDeleted();
@@ -39,7 +39,7 @@ public class FirebaseDatabaseHelper {
                 List<String> keys = new ArrayList<>();
                 for(DataSnapshot keyNode : dataSnapshot.getChildren()){
                    keys.add (keyNode.getKey());
-                   Produtos produto = keyNode.getValue(Produtos.class);
+                   Produto produto = keyNode.getValue(Produto.class);
                    produtos.add(produto);
 
                 }

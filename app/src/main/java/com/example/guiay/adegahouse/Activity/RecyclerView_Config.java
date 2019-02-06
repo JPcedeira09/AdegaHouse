@@ -15,7 +15,7 @@ import java.util.List;
 public class RecyclerView_Config {
     private Context mContext;
     private ProdutosAdapter mProdutosAdapter;
-    public void setConfig(RecyclerView recyclerView, Context context, List <Produtos> produtos, List<String> keys){
+    public void setConfig(RecyclerView recyclerView, Context context, List <Produto> produtos, List<String> keys){
         mContext = context;
         mProdutosAdapter = new ProdutosAdapter(produtos,keys);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -40,7 +40,7 @@ public class RecyclerView_Config {
             mValor = (TextView) itemView.findViewById(R.id.valor_txtView);
         }
 
-        public void bind (Produtos produtos, String key) {
+        public void bind (Produto produtos, String key) {
             mNome.setText(produtos.getNome());
             mDescricao.setText(produtos.getDescricao());
             mValor.setText(produtos.getValor());
@@ -50,10 +50,10 @@ public class RecyclerView_Config {
     }
 
     class ProdutosAdapter extends RecyclerView.Adapter<ProdutosItemView>{
-        private List<Produtos> mProdutosList;
+        private List<Produto> mProdutosList;
         private List<String> mKeys;
 
-        public ProdutosAdapter(List<Produtos> mProdutosList, List<String> mKeys) {
+        public ProdutosAdapter(List<Produto> mProdutosList, List<String> mKeys) {
             this.mProdutosList = mProdutosList;
             this.mKeys = mKeys;
         }

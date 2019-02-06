@@ -1,6 +1,6 @@
 package com.example.guiay.adegahouse.Activity;
 
-public class Produtos {
+public class Produto {
 
     private String descricao;
     private boolean disponivel;
@@ -8,10 +8,10 @@ public class Produtos {
     private String quantidade;
     private String valor;
 
-    public Produtos() {
+    public Produto() {
     }
 
-    public Produtos(String descricao, boolean disponivel, String nome, String quantidade, String valor) {
+    public Produto(String descricao, boolean disponivel, String nome, String quantidade, String valor) {
         this.descricao = descricao;
         this.disponivel = disponivel;
         this.nome = nome;

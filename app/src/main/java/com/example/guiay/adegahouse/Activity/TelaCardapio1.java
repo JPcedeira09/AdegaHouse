@@ -2,20 +2,15 @@ package com.example.guiay.adegahouse.Activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.design.internal.BottomNavigationItemView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Adapter;
-import android.widget.ImageView;
-import android.widget.Toolbar;
 
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
-import com.google.firebase.FirebaseError;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -35,7 +30,9 @@ public class TelaCardapio1 extends AppCompatActivity {
 
 
     private RecyclerView recyclerProdutosCardapio;
-    private DatabaseReference firebase;
+    private DatabaseReference firebaseRef;
+    private List<Produto> produtos = new ArrayList<>();
+
 
 
     @Override
@@ -55,6 +52,8 @@ public class TelaCardapio1 extends AppCompatActivity {
 
         //configuracoes iniciais
         iniciailizarComponentes();
+
+
 
 
 
@@ -119,7 +118,7 @@ public class TelaCardapio1 extends AppCompatActivity {
         recyclerProdutosCardapio = findViewById(R.id.recyclerProdutosCardapio);
         new FirebaseDatabaseHelper().readProdutos(new FirebaseDatabaseHelper.DataStatus() {
             @Override
-            public void DataIsLoaded(List<Produtos> produtos, List<String> keys) {
+            public void DataIsLoaded(List<Produto> produtos, List<String> keys) {
                 new RecyclerView_Config().setConfig(recyclerProdutosCardapio,TelaCardapio1.this,
                         produtos, keys);
             }
@@ -140,7 +139,6 @@ public class TelaCardapio1 extends AppCompatActivity {
             }
         });
     }
-
     private void printDatabase(){
 
         DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
@@ -151,7 +149,7 @@ public class TelaCardapio1 extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot chidSnap : dataSnapshot.getChildren()) {
-                    Produtos produtoValue = chidSnap.getValue(Produtos.class);
+                    Produto produtoValue = chidSnap.getValue(Produto.class);
                     System.out.println(produtoValue.getNome());
                 }
             }
@@ -163,6 +161,8 @@ public class TelaCardapio1 extends AppCompatActivity {
         });
     }
 
-
     }
+
+
+
 
