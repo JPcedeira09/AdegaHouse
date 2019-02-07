@@ -5,7 +5,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class AdicionarProduto {
+public class Produto {
 
     private String descricao;
     private boolean disponivel;
@@ -16,15 +16,15 @@ public class AdicionarProduto {
 
 
 
-    public AdicionarProduto() {
+    public Produto() {
 
     }
 
     public void salvar(){
 
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference addProdutoRef =firebaseRef.child("Produtos").child(this.nome);
-           addProdutoRef.setValue(this);
+        DatabaseReference  produtoRef =firebaseRef.child("Teste").child(this.nome); //trocar para produto
+           produtoRef.setValue(this);
 
     }
 

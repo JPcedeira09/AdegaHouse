@@ -1246,6 +1246,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerProdutos
 id recylerView
 id right
 id right_icon
@@ -1299,6 +1300,9 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textDescricaoProduto
+id textNomeProduto
+id textPreco
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1309,6 +1313,7 @@ id textView4
 id textView5
 id textView6
 id textView7
+id textView8
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1391,6 +1396,7 @@ layout activity_login
 layout activity_pedidos_cardapio
 layout activity_pedidos_estoque
 layout activity_teste
+layout adapter_produto
 layout bottom_navigation
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1406,6 +1412,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout divisor
 layout fragment_add_produto
 layout fragment_estoque
 layout fragment_pedidos_realizados

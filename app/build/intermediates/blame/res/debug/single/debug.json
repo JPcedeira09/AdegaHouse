@@ -1112,6 +1112,10 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\activity_pedidos_cardapio.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_divisor.xml.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\divisor.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\336c6d860ea51f9ed8a5e8126c6f648f\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
@@ -2158,6 +2162,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_cadeado_cinza_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_cadeado_cinza_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_produto.xml.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\adapter_produto.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_ripple_color.xml.flat",

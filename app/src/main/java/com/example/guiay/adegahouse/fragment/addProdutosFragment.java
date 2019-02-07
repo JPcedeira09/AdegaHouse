@@ -2,32 +2,18 @@ package com.example.guiay.adegahouse.fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.MediaController;
-import android.widget.Switch;
 import android.widget.Toast;
-
 import com.example.guiay.adegahouse.R;
-import com.example.guiay.adegahouse.activity.Login;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
-import com.example.guiay.adegahouse.model.AdicionarProduto;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
-import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.example.guiay.adegahouse.model.Produto;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import static android.widget.Toast.*;
-import static android.widget.Toast.LENGTH_SHORT;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,13 +45,13 @@ public class addProdutosFragment extends Fragment {
             adicionarProduto = view.findViewById(R.id.addProduto);
             firebaseRef = ConfiguracaoFirebase.getFirebase();
 
-            //Recuperar dados da empresa
-            /*DatabaseReference addProdutoRef = firebaseRef.child("Teste").child("sera??");
+            //Recuperar dados
+            /*DatabaseReference produtoRef = firebaseRef.child("Teste").child("sera??");
             addProdutoRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (dataSnapshot.getValue() !=null){
-                        AdicionarProduto adicionarProduto = dataSnapshot.getValue(AdicionarProduto.class);
+                        AdicionarProduto adicionarProduto = dataSnapshot.getValue(Produto.class);
                         editNome.setText(adicionarProduto.getNome());
                         editDescricao.setText(adicionarProduto.getDescricao());
                         editQtq.setText(adicionarProduto.getQuantidade());
@@ -96,12 +82,12 @@ public class addProdutosFragment extends Fragment {
                             if (!quantidade.isEmpty()){
                                 if (!valor.isEmpty()){
 
-                                    AdicionarProduto adicionarProduto = new AdicionarProduto();
-                                    adicionarProduto.setNome(nome);
-                                    adicionarProduto.setDescricao(descricao);
-                                    adicionarProduto.setQuantidade(quantidade);
-                                    adicionarProduto.setValor(valor);
-                                    adicionarProduto.salvar();
+                                    Produto produto = new Produto();
+                                    produto.setNome(nome);
+                                    produto.setDescricao(descricao);
+                                    produto.setQuantidade(quantidade);
+                                    produto.setValor(valor);
+                                    produto.salvar();
                                     Toast.makeText(getActivity(),"Cadastro realizado com sucesso",Toast.LENGTH_SHORT).show();
 
 
