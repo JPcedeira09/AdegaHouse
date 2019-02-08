@@ -4,13 +4,17 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+
+import com.example.guiay.adegahouse.Adapter.AdapterProduto;
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
+import com.example.guiay.adegahouse.model.Usuario;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,38 +31,29 @@ public class TelaCardapio1 extends AppCompatActivity {
     private FirebaseAuth autenticacao;
     private DatabaseReference mDatabase;
 
-
-
     private RecyclerView recyclerProdutosCardapio;
-    private DatabaseReference firebaseRef;
-    private List<Produto> produtos = new ArrayList<>();
-
-
+    private List<Produto> produtos = new ArrayList<Produto>();
+    private AdapterProduto adapterProduto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cardapio1);
+//
+//        //Configurar toolbar
+//        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbarPrincipal);
+//        toolbar.setTitle("Cardápio");
+//        setSupportActionBar( toolbar );
 
-        //Configurar toolbar
-        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbarPrincipal);
-        toolbar.setTitle("Cardápio");
-        setSupportActionBar( toolbar );
-
-        //configuracoes de objetos
-        autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
-
-        configuraBottomNavigation();
+        //BottomNavigation
+      //  configuraBottomNavigation();
 
         //configuracoes iniciais
-        iniciailizarComponentes();
+        //iniciailizarComponentes();
+//        autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
+//
+        recuperarProdutos();
 
-
-
-
-
-        //configurações database
-        mDatabase = FirebaseDatabase.getInstance().getReference();
     }
 
     public void configuraBottomNavigation(){
@@ -68,12 +63,35 @@ public class TelaCardapio1 extends AppCompatActivity {
         bottomNavigationViewEx.enableItemShiftingMode(false);
         bottomNavigationViewEx.enableShiftingMode(false);
         bottomNavigationViewEx.setTextVisibility(true);
-
-        //Habilitar navegação
-
-
     }
 
+    private void recuperarProdutos(){
+        //configurações database
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        DatabaseReference produtosRef = mDatabase
+                .child("Adega")
+                .child("Produtos");
+
+        produtosRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                produtos.clear();
+
+                for (DataSnapshot child: dataSnapshot.getChildren()){
+                    Produto produto = child.getValue(Produto.class);
+                    System.out.println(produto);
+                    produtos.add(produto);
+                }
+               // adapterProduto.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -84,6 +102,7 @@ public class TelaCardapio1 extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    //botão de opções da toolbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -101,6 +120,7 @@ public class TelaCardapio1 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //botão Sair
     private void deslogarUsuario(){
 
         try {
@@ -110,58 +130,25 @@ public class TelaCardapio1 extends AppCompatActivity {
         }
     }
 
+    //Pagina de configurações do usuario
     private void abrirConfiguracoes(){
         startActivity(new Intent(TelaCardapio1.this, ConfiguracoesUsuarioActivity.class));
     }
 
     private void iniciailizarComponentes(){
         recyclerProdutosCardapio = findViewById(R.id.recyclerProdutosCardapio);
-        new FirebaseDatabaseHelper().readProdutos(new FirebaseDatabaseHelper.DataStatus() {
-            @Override
-            public void DataIsLoaded(List<Produto> produtos, List<String> keys) {
-                new RecyclerView_Config().setConfig(recyclerProdutosCardapio,TelaCardapio1.this,
-                        produtos, keys);
-            }
-
-            @Override
-            public void DataIsInserted() {
-
-            }
-
-            @Override
-            public void DataIsUpdated() {
-
-            }
-
-            @Override
-            public void DataIsDeleted() {
-
-            }
-        });
-    }
-    private void printDatabase(){
-
-        DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
-
-        System.out.println("print");
-
-        myRef.child("Adega").child("Produtos").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot chidSnap : dataSnapshot.getChildren()) {
-                    Produto produtoValue = chidSnap.getValue(Produto.class);
-                    System.out.println(produtoValue.getNome());
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+        //Configura recyclerView
+        recyclerProdutosCardapio.setLayoutManager(new LinearLayoutManager(this));
+        recyclerProdutosCardapio.setHasFixedSize(true);
+        adapterProduto = new AdapterProduto(produtos,this);
+        recyclerProdutosCardapio.setAdapter(adapterProduto);
     }
 
-    }
+}
+
+
+
+
 
 
 
