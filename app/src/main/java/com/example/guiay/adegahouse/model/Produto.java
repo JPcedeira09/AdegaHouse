@@ -18,13 +18,14 @@ public class Produto {
 
     public Produto() {
 
+
     }
 
-    public void salvar(){
 
+    public void remover(){
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
         DatabaseReference  produtoRef =firebaseRef.child("Teste").child(this.nome); //trocar para produto
-           produtoRef.setValue(this);
+        produtoRef.removeValue();
 
     }
 

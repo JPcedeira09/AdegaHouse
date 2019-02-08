@@ -24,12 +24,6 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
         this.produtos = p;
         this.context = c;
     }
-
-
-
-
-
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
@@ -39,14 +33,17 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Produto produto = produtos.get(position);
-        holder.nome.setText(produto.getNome());
-        holder.descricao.setText(produto.getDescricao());
-        holder.valor.setText("R$ " + produto.getValor());
+        for (int i : getItemCount()) {
+            Produto produto = produtos.get(position);
+            holder.nome.setText(produto.getNome());
+            holder.descricao.setText(produto.getDescricao());
+            holder.valor.setText("R$ " + produto.getValor());
+        }
     }
 
     @Override
     public int getItemCount() {
+
 
         return produtos.size();
     }
@@ -60,7 +57,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            nome = itemView.findViewById(R.id.textPreco);
+            nome = itemView.findViewById(R.id.textNomeProduto);
             descricao = itemView.findViewById(R.id.textDescricaoProduto);
             valor = itemView.findViewById(R.id.textPreco);
         }

@@ -9,6 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.adapter.AdapterProduto;
@@ -23,6 +25,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.ifood.cursoandroid.ifoodprojeto.listener.RecyclerItemClickListener;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -33,9 +37,8 @@ public class estoqueFragment extends Fragment {
     private List<Produto> produtos = new ArrayList<>();
 
     public estoqueFragment() {
-        // Required empty public constructor
-    }
 
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,13 +48,35 @@ public class estoqueFragment extends Fragment {
          //Inicializar os Componentes
         recyclerProdutos = view.findViewById(R.id.recyclerProdutos);
         firebaseRef = ConfiguracaoFirebase.getFirebase();
-        produtos = new ArrayList<>();
+
 
         //Configurar o RecyclerView
         recyclerProdutos.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerProdutos.setHasFixedSize(true);
         adapterProduto = new AdapterProduto(produtos,getActivity());
         recyclerProdutos.setAdapter(adapterProduto);
+
+        //Adiciona evento de clique no Recyclcerview
+        recyclerProdutos.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), recyclerProdutos,
+                new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+
+            }
+
+            @Override
+            public void onLongItemClick(View view, int position) {
+                Produto produtoSelecionado = produtos.get(position);
+                produtoSelecionado.remover();
+                Toast.makeText(getActivity(),"Produto excluido com sucesso ",Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        }));
 
 
         //Recupera os dados do Firebase

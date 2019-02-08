@@ -30,7 +30,15 @@ public class addProdutosFragment extends Fragment {
     public addProdutosFragment() {
             // Required empty public constructor
         }
+    public void salvar(Produto produto){
 
+        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
+          firebaseRef
+                .child("Teste")
+                .child(produto.getNome()) //trocar para produto
+                .setValue(produto);
+
+    }
 
         @Override
         public View onCreateView (LayoutInflater inflater, ViewGroup container,
@@ -87,7 +95,7 @@ public class addProdutosFragment extends Fragment {
                                     produto.setDescricao(descricao);
                                     produto.setQuantidade(quantidade);
                                     produto.setValor(valor);
-                                    produto.salvar();
+                                    salvar(produto);
                                     Toast.makeText(getActivity(),"Cadastro realizado com sucesso",Toast.LENGTH_SHORT).show();
 
 

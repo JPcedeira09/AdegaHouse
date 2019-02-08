@@ -1312,7 +1312,6 @@ id textView3
 id textView4
 id textView5
 id textView6
-id textView7
 id textView8
 id text_input_password_toggle
 id textinput_counter
@@ -1395,7 +1394,6 @@ layout activity_intro__cadastro
 layout activity_login
 layout activity_pedidos_cardapio
 layout activity_pedidos_estoque
-layout activity_teste
 layout adapter_produto
 layout bottom_navigation
 layout design_bottom_navigation_item
