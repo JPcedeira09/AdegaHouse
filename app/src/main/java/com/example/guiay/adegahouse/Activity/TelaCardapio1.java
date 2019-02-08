@@ -39,19 +39,19 @@ public class TelaCardapio1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cardapio1);
-//
-//        //Configurar toolbar
-//        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbarPrincipal);
-//        toolbar.setTitle("Cardápio");
-//        setSupportActionBar( toolbar );
+
+        //Configurar toolbar
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbarPrincipal);
+        toolbar.setTitle("CARDAPIO");
+        setSupportActionBar( toolbar );
 
         //BottomNavigation
-      //  configuraBottomNavigation();
+         configuraBottomNavigation();
 
         //configuracoes iniciais
-        //iniciailizarComponentes();
-//        autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
-//
+        iniciailizarComponentes();
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
+
         recuperarProdutos();
 
     }
@@ -79,16 +79,17 @@ public class TelaCardapio1 extends AppCompatActivity {
                 produtos.clear();
 
                 for (DataSnapshot child: dataSnapshot.getChildren()){
+                    System.out.println(child);
                     Produto produto = child.getValue(Produto.class);
                     System.out.println(produto);
                     produtos.add(produto);
                 }
-               // adapterProduto.notifyDataSetChanged();
+                adapterProduto.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                System.out.print(databaseError.toException());
             }
         });
     }
