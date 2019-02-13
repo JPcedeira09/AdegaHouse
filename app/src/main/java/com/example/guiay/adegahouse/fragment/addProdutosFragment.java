@@ -22,7 +22,7 @@ public class addProdutosFragment extends Fragment {
 
     private EditText editNome,editDescricao,editQtq,editValor;
     private Button adicionarProduto;
-    private DatabaseReference firebaseRef;
+    private DatabaseReference  firebaseRef;
 
 
 
@@ -33,9 +33,9 @@ public class addProdutosFragment extends Fragment {
     public void salvar(Produto produto){
 
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-          firebaseRef
-                .child("Teste")
-                .child(produto.getNome()) //trocar para produto
+                firebaseRef
+                .child("Teste")//trocar para produto
+                .child(produto.getNome())
                 .setValue(produto);
 
     }

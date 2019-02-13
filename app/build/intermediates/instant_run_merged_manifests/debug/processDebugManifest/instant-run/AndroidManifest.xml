@@ -30,6 +30,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.guiay.adegahouse.adapter.AdapterPedidos" />
         <activity android:name="com.example.guiay.adegahouse.activity.PedidosEstoque" />
         <activity android:name="com.example.guiay.adegahouse.activity.MainActivity" >
             <intent-filter>

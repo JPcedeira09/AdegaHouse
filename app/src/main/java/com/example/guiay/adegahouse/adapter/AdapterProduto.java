@@ -33,12 +33,12 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        for (int i : getItemCount()) {
+
             Produto produto = produtos.get(position);
             holder.nome.setText(produto.getNome());
             holder.descricao.setText(produto.getDescricao());
             holder.valor.setText("R$ " + produto.getValor());
-        }
+
     }
 
     @Override
@@ -58,7 +58,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
             super(itemView);
 
             nome = itemView.findViewById(R.id.textNomeProduto);
-            descricao = itemView.findViewById(R.id.textDescricaoProduto);
+            descricao = itemView.findViewById(R.id.textDescricao);
             valor = itemView.findViewById(R.id.textPreco);
         }
     }

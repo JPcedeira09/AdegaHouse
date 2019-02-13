@@ -36,7 +36,7 @@ public class pedidosRealizadosFragment extends Fragment {
         //Configuraçoes iniciais
         //firebaseref = ConfiguracaoFirebase.
 
-        recyclerView = view.findViewById(R.id.recylerView);
+        recyclerView = view.findViewById(R.id.recyclerView);
         //Configurar o adapter
 
         //Configurar RecyclerView

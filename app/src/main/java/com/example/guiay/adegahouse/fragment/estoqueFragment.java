@@ -1,8 +1,10 @@
 package com.example.guiay.adegahouse.fragment;
 
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -33,8 +35,8 @@ import br.com.ifood.cursoandroid.ifoodprojeto.listener.RecyclerItemClickListener
 public class estoqueFragment extends Fragment {
     private DatabaseReference firebaseRef;
     private RecyclerView recyclerProdutos;
-    private AdapterProduto adapterProduto;
     private List<Produto> produtos = new ArrayList<>();
+
 
     public estoqueFragment() {
 
@@ -45,47 +47,48 @@ public class estoqueFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_estoque, container, false);
 
-         //Inicializar os Componentes
+        //Inicializar os Componentes
         recyclerProdutos = view.findViewById(R.id.recyclerProdutos);
         firebaseRef = ConfiguracaoFirebase.getFirebase();
 
 
         //Configurar o RecyclerView
-        recyclerProdutos.setLayoutManager(new LinearLayoutManager(getActivity()));
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        recyclerProdutos.setLayoutManager(layoutManager);
         recyclerProdutos.setHasFixedSize(true);
-        adapterProduto = new AdapterProduto(produtos,getActivity());
+        final AdapterProduto adapterProduto = new AdapterProduto(produtos,getActivity());
         recyclerProdutos.setAdapter(adapterProduto);
 
         //Adiciona evento de clique no Recyclcerview
         recyclerProdutos.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), recyclerProdutos,
                 new RecyclerItemClickListener.OnItemClickListener() {
-            @Override
-            public void onItemClick(View view, int position) {
+                    @Override
+                    public void onItemClick(View view, int position) {
 
-            }
+                    }
 
-            @Override
-            public void onLongItemClick(View view, int position) {
-                Produto produtoSelecionado = produtos.get(position);
-                produtoSelecionado.remover();
-                Toast.makeText(getActivity(),"Produto excluido com sucesso ",Toast.LENGTH_SHORT).show();
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+                        Produto produtoSelecionado = produtos.get(position);
+                        produtoSelecionado.remover();
+                        Toast.makeText(getActivity(), "Produto excluido com sucesso ", Toast.LENGTH_SHORT).show();
 
-            }
+                    }
 
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            }
-        }));
+                    }
+                }));
 
 
         //Recupera os dados do Firebase
-        DatabaseReference produtoRef = firebaseRef.child("Teste"); //Trocar para produto
+        DatabaseReference produtoRef = firebaseRef.child("Teste");//Trocar para produto
         produtoRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                 produtos.clear();
-                for (DataSnapshot ds: dataSnapshot.getChildren()){
+                produtos.clear();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     produtos.add(ds.getValue(Produto.class));
 
                 }
@@ -100,11 +103,7 @@ public class estoqueFragment extends Fragment {
         });
 
 
-
-
-
         // Inflate the layout for this fragment
         return view;
     }
-
 }
