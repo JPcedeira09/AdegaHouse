@@ -12,4 +12,87 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <EditText
+        android:id="@+id/editTxtCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtCep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="CEP"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtComplemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Complemento"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTxtCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bttAtualizarEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:onClick="validarDadosUsuario"
+        android:text="Atualizar dados"
+        android:textSize="18sp" />
+
 </LinearLayout>

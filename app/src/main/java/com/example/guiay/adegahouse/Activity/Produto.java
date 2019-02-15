@@ -6,12 +6,12 @@ public class Produto {
     private boolean disponivel;
     private String nome;
     private String quantidade;
-    private String valor;
+    private double valor;
 
     public Produto() {
     }
 
-    public Produto(String descricao, boolean disponivel, String nome, String quantidade, String valor) {
+    public Produto(String descricao, boolean disponivel, String nome, String quantidade, double valor) {
         this.descricao = descricao;
         this.disponivel = disponivel;
         this.nome = nome;
@@ -51,11 +51,11 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public String getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(String valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 }
