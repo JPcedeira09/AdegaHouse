@@ -66,13 +66,7 @@ public class ConfiguracoesUsuarioActivity extends AppCompatActivity {
 
         AtualizacaoUsuario atualizacao = new AtualizacaoUsuario(email, cpf,  cep,  endereco,  numero,  complemento,  celular);
 
-        System.out.println(atualizacao.toString());
-        System.out.println(atualizacao.toString());
-        System.out.println(atualizacao.toString());
 
-        ObjectMapper mapper = new ObjectMapper();
-
-        mapper.convertValue(atualizacao, AtualizacaoUsuario.class);
 
         Map<String,Object> atualizacaoMap = new HashMap<String,Object>();
         atualizacaoMap.put("cpf", atualizacao.getCpf());
