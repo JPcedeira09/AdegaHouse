@@ -39,13 +39,10 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
             holder.descricao.setText(produto.getDescricao());
             holder.valor.setText("R$ " + produto.getValor());
 
-
     }
-
 
     @Override
     public int getItemCount() {
-
 
         return produtos.size();
     }

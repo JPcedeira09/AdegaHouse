@@ -22,21 +22,20 @@ import java.util.List;
 public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHolder> {
 
     private List<Pedido> pedidos;
-    private List<ValoresPedido> valoresPedidos;
     private Context context;
 
-    public AdapterPedidos(List<Pedido> pp, Context cc, List<ValoresPedido> vp) {
+
+    public AdapterPedidos(List<Pedido> pp, Context cc) {
         this.pedidos = pp;
         this.context = cc;
-        this.valoresPedidos = vp;
 
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
-        View itemPedido = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_pedidos, parent,false);
-        return new MyViewHolder(itemPedido);
+        View itemLista = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_pedidos, parent,false);
+        return new MyViewHolder(itemLista);
     }
 
     @Override
@@ -44,10 +43,14 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
 
         Pedido pedido = pedidos.get(position);
         holder.pedido.setText(pedido.getItensCarrinho());
-
         holder.valorFinal.setText("R$ " + pedido.getValorTotal());
+    }
+
+    @Override
+    public int getItemCount() {
 
 
+        return pedidos.size();
     }
     //Fazendo o alertDialog
    /* public void abrirAlerta(View view){
@@ -74,12 +77,6 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
 
     }*/
 
-    @Override
-    public int getItemCount() {
-
-
-        return pedidos.size();
-    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 

@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,11 +33,9 @@ public class pedidosRealizadosFragment extends Fragment {
     private RecyclerView recyclerPedidos;
     private List<Pedido> pedidos = new ArrayList<>();
 
-
     public pedidosRealizadosFragment() {
 
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,12 +61,14 @@ public class pedidosRealizadosFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 pedidos.clear();
-                for (DataSnapshot ds : dataSnapshot.getChildren()){
 
-                    pedidos.add(ds.getValue(Pedido.class));
+                Long aLong = dataSnapshot.getChildrenCount();
+                System.out.println("Esse é o count dos Childs do Pedidos:"+aLong);
+
+                for (DataSnapshot ds : dataSnapshot.getChildren()){
+                  pedidos.add(ds.getValue(Pedido.class));
                 }
                 adapterPedido.notifyDataSetChanged();
-
 
             }
 
@@ -76,9 +77,6 @@ public class pedidosRealizadosFragment extends Fragment {
 
             }
         });
-
-
-
 
         return view;
     }
