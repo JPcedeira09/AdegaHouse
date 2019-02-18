@@ -1,17 +1,19 @@
 package com.example.guiay.adegahouse.Activity;
 
+import com.google.firebase.database.Exclude;
+
 public class Produto {
 
     private String descricao;
     private boolean disponivel;
     private String nome;
-    private String quantidade;
+    private Integer quantidade;
     private double valor;
 
     public Produto() {
     }
 
-    public Produto(String descricao, boolean disponivel, String nome, String quantidade, double valor) {
+    public Produto(String descricao, boolean disponivel, String nome, Integer quantidade, double valor) {
         this.descricao = descricao;
         this.disponivel = disponivel;
         this.nome = nome;
@@ -43,11 +45,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getQuantidade() {
+    public Integer getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(String quantidade) {
+    public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
 

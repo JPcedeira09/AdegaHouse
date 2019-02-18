@@ -32,7 +32,7 @@ public class TelaCardapio1 extends AppCompatActivity {
     private DatabaseReference mDatabase;
 
     private RecyclerView recyclerProdutosCardapio;
-    private List<Produto> produtos = new ArrayList<Produto>();
+    private List<Produto> produtos = new ArrayList<>();
     private AdapterProduto adapterProduto;
 
     @Override

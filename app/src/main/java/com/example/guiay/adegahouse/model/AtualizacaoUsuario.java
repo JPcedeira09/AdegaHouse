@@ -5,6 +5,7 @@ import com.google.firebase.database.DatabaseReference;
 
 public class AtualizacaoUsuario {
 
+    private String email;
     private String cpf;
     private String cep;
     private String endereco;
@@ -15,7 +16,24 @@ public class AtualizacaoUsuario {
     public AtualizacaoUsuario() {
     }
 
+    public AtualizacaoUsuario (String email,String cpf, String cep, String endereco, String numero, String complemento, String celular) {
 
+        this.email = email;
+        this.cpf = cpf;
+        this.cep = cep;
+        this.endereco = endereco;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.celular = celular;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getCpf() {
         return cpf;
@@ -63,5 +81,17 @@ public class AtualizacaoUsuario {
 
     public void setCelular(String celular) {
         this.celular = celular;
+    }
+
+    @Override
+    public String toString() {
+        return "AtualizacaoUsuario{" +
+                "cpf='" + cpf + '\'' +
+                ", cep='" + cep + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", numero='" + numero + '\'' +
+                ", complemento='" + complemento + '\'' +
+                ", celular='" + celular + '\'' +
+                '}';
     }
 }
