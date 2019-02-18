@@ -40,6 +40,11 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
         holder.nome.setText(produto.getNome());
         holder.descricao.setText(produto.getDescricao());
         holder.valor.setText("R$ " + produto.getValor());
+        if(produto.isDisponivel() == true){
+            holder.disponivel.setText("Disponivel");
+        }else{
+            holder.disponivel.setText("Indisponivel");
+        }
     }
 
     @Override
@@ -52,6 +57,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
         TextView nome;
         TextView descricao;
         TextView valor;
+        TextView disponivel;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -59,6 +65,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
             nome = itemView.findViewById(R.id.textNomeRefeicao);
             descricao = itemView.findViewById(R.id.textDescricaoRefeicao);
             valor = itemView.findViewById(R.id.textPreco);
+            disponivel = itemView.findViewById(R.id.textDisponivel);
         }
     }
 }

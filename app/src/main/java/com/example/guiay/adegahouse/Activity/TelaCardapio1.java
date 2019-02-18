@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -35,6 +36,8 @@ public class TelaCardapio1 extends AppCompatActivity {
     private List<Produto> produtos = new ArrayList<>();
     private AdapterProduto adapterProduto;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,9 @@ public class TelaCardapio1 extends AppCompatActivity {
         autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
 
         recuperarProdutos();
+
+        //Selecionar Produto
+
 
     }
 

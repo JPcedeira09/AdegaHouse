@@ -1,7 +1,5 @@
 package com.example.guiay.adegahouse.Activity;
 
-import com.google.firebase.database.Exclude;
-
 public class Produto {
 
     private String descricao;
