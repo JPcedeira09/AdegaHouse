@@ -29,9 +29,9 @@ import java.util.List;
  */
 public class pedidosRealizadosFragment extends Fragment {
 
-    private DatabaseReference firebaseref;
-    private RecyclerView recyclerPedidos;
-    private List<Pedido> pedidos = new ArrayList<>();
+    //private DatabaseReference firebaseref;
+    //private RecyclerView recyclerPedidos;
+    //private List<Pedido> pedidos = new ArrayList<>();
 
     public pedidosRealizadosFragment() {
 
@@ -43,7 +43,7 @@ public class pedidosRealizadosFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pedidos_realizados, container, false);
 
-        //Configuraçoes iniciais
+        /*//Configuraçoes iniciais
         recyclerPedidos = view.findViewById(R.id.recyclerPedido);
         firebaseref = ConfiguracaoFirebase .getFirebase();
 
@@ -78,7 +78,7 @@ public class pedidosRealizadosFragment extends Fragment {
             }
         });
 
-        return view;
+       */ return view;
     }
 
 }
