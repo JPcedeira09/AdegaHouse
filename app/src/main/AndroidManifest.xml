@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adapter.AdapterPedidos"></activity>
+        <activity
+            android:name=".activity.menuDono"
+            android:label="@string/title_activity_menu_dono"
+            android:parentActivityName=".activity.PedidosEstoque"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guiay.adegahouse.activity.PedidosEstoque" />
+        </activity>
+        <activity android:name=".adapter.AdapterPedidos" />
         <activity android:name=".activity.PedidosEstoque" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>

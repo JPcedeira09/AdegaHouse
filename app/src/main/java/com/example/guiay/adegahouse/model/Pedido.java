@@ -1,15 +1,15 @@
 package com.example.guiay.adegahouse.model;
 
+
+import java.lang.reflect.Array;
+import java.util.List;
+
 public class Pedido {
     private String itensCarrinho;
-    private String valorTotal;
-    private String pedidoHora;
-    private String pedidoDistancia;
-
-
+    private double valorTotal;
+    private Usuario usuario;
 
     public Pedido() {
-
 
     }
 
@@ -21,27 +21,19 @@ public class Pedido {
         this.itensCarrinho = itensCarrinho;
     }
 
-    public String getValorTotal() {
+    public double getValorTotal() {
         return valorTotal;
     }
 
-    public void setValorTotal(String valorTotal) {
+    public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
     }
 
-    public String getPedidoHora() {
-        return pedidoHora;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setPedidoHora(String pedidoHora) {
-        this.pedidoHora = pedidoHora;
-    }
-
-    public String getPedidoDistancia() {
-        return pedidoDistancia;
-    }
-
-    public void setPedidoDistancia(String pedidoDistancia) {
-        this.pedidoDistancia = pedidoDistancia;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

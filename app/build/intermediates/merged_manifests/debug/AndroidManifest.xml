@@ -30,6 +30,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.guiay.adegahouse.activity.menuDono"
+            android:label="@string/title_activity_menu_dono"
+            android:parentActivityName="com.example.guiay.adegahouse.activity.PedidosEstoque"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guiay.adegahouse.activity.PedidosEstoque" />
+        </activity>
         <activity android:name="com.example.guiay.adegahouse.adapter.AdapterPedidos" />
         <activity android:name="com.example.guiay.adegahouse.activity.PedidosEstoque" />
         <activity android:name="com.example.guiay.adegahouse.activity.MainActivity" >

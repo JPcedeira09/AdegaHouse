@@ -10,8 +10,8 @@ public class Produto {
     private String descricao;
     private boolean disponivel;
     private String nome;
-    private String quantidade;
-    private String valor;
+    private String quantidade;//trocar para Integer
+    private String valor;//trocar para double
 
 
 

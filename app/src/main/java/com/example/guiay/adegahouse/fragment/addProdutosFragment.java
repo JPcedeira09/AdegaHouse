@@ -2,6 +2,7 @@ package com.example.guiay.adegahouse.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,10 @@ import android.widget.Toast;
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.model.Produto;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 
 
 /**
@@ -53,13 +57,13 @@ public class addProdutosFragment extends Fragment {
             adicionarProduto = view.findViewById(R.id.addProduto);
             firebaseRef = ConfiguracaoFirebase.getFirebase();
 
-            //Recuperar dados
-            /*DatabaseReference produtoRef = firebaseRef.child("Teste").child("sera??");
-            addProdutoRef.addValueEventListener(new ValueEventListener() {
+            /* //Recuperar dados
+            DatabaseReference produtoRef = firebaseRef.child("Teste").child("jhonny");
+            produtoRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (dataSnapshot.getValue() !=null){
-                        AdicionarProduto adicionarProduto = dataSnapshot.getValue(Produto.class);
+                        Produto adicionarProduto = dataSnapshot.getValue(Produto.class);
                         editNome.setText(adicionarProduto.getNome());
                         editDescricao.setText(adicionarProduto.getDescricao());
                         editQtq.setText(adicionarProduto.getQuantidade());

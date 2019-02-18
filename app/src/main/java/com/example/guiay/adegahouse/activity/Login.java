@@ -103,7 +103,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void abrirPedidosEstoque(){
-        startActivity(new Intent(this, PedidosEstoque.class));
+        startActivity(new Intent(this, menuDono.class));
 
     }
 }

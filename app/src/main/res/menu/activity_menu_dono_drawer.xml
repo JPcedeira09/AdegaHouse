@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/promocoes_dono"
+            android:icon="@drawable/ic_promocoes_dono_black_24dp"
+            android:title="Promoçoes" />
+        <item
+            android:id="@+id/enviar_email"
+            android:icon="@drawable/ic_email_cinza_24dp"
+            android:title="Enviar email" />
+        <item
+            android:id="@+id/edit_perfil"
+            android:icon="@drawable/ic_pessoa_cinza_24dp"
+            android:title="Editar perfil" />
+        <item
+            android:id="@+id/lista_historico"
+            android:icon="@drawable/ic_lista_preto_24dp"
+            android:title="Historico de pedidos " />
+    </group>
+
+    <item android:title="-----------------------------------------------------------------------------------------------------------------------------------------------">
+        <menu>
+            <item
+                android:id="@+id/como_usar"
+                android:icon="@drawable/ic_push_notification_preto_24dp"
+                android:title="Como usar" />
+            <item
+                android:id="@+id/politicas_uso"
+                android:icon="@drawable/ic_politicas_de_uso_black_24dp"
+                android:title="Politicas de uso" />
+            <item
+                android:id="@+id/sair"
+                android:icon="@drawable/ic_sair_circle_black_24dp"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>
