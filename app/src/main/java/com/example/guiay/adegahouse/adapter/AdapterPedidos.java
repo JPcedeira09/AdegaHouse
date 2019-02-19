@@ -43,6 +43,7 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
 
         Pedido pedido = pedidos.get(position);
         holder.pedido.setText(pedido.getItensCarrinho());
+        holder.pedido.setText((CharSequence) pedido.getUsuario());
         holder.valorFinal.setText("R$ " + pedido.getValorTotal());
     }
 

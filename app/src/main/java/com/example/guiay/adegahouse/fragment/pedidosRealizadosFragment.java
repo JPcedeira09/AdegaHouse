@@ -16,6 +16,7 @@ import com.example.guiay.adegahouse.adapter.AdapterPedidos;
 import com.example.guiay.adegahouse.adapter.AdapterProduto;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.model.Pedido;
+import com.example.guiay.adegahouse.model.Produto;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,7 +32,7 @@ public class pedidosRealizadosFragment extends Fragment {
 
     private DatabaseReference firebaseref;
     private RecyclerView recyclerPedidos;
-    private List<Pedido> pedidos = new ArrayList<>();
+    private List<Produto> produtos = new ArrayList<>();
 
     public pedidosRealizadosFragment() {
 
@@ -51,22 +52,22 @@ public class pedidosRealizadosFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerPedidos.setLayoutManager(layoutManager);
         recyclerPedidos.setHasFixedSize(true);
-        final AdapterPedidos adapterPedido = new AdapterPedidos(pedidos,getActivity());
+        final AdapterProduto adapterPedido = new AdapterProduto(produtos,getActivity());
         recyclerPedidos.setAdapter(adapterPedido);
 
         //Recupera dados do Firebase
         DatabaseReference pedidosRef = firebaseref
-                .child("Pedidos");
+                .child("Teste");
         pedidosRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                pedidos.clear();
+                produtos.clear();
 
-                Long aLong = dataSnapshot.getChildrenCount();
-                System.out.println("Esse é o count dos Childs do Pedidos:"+aLong);
+                //Long aLong = dataSnapshot.getChildrenCount();
+                //System.out.println("Esse é o count dos Childs do Pedidos:"+aLong);
 
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
-                  pedidos.add(ds.getValue(Pedido.class));
+                  produtos.add(ds.getValue(Produto.class));
                 }
                 adapterPedido.notifyDataSetChanged();
 
@@ -78,7 +79,7 @@ public class pedidosRealizadosFragment extends Fragment {
             }
         });
 
-        return view;
+         return view;
     }
 
 }
