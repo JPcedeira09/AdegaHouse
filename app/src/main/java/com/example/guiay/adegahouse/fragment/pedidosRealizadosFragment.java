@@ -32,7 +32,7 @@ public class pedidosRealizadosFragment extends Fragment {
 
     private DatabaseReference firebaseref;
     private RecyclerView recyclerPedidos;
-    private List<Produto> produtos = new ArrayList<>();
+    private List<Produto> produtos = new ArrayList<>(); //Trocar para pedidos
 
     public pedidosRealizadosFragment() {
 
@@ -52,12 +52,12 @@ public class pedidosRealizadosFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerPedidos.setLayoutManager(layoutManager);
         recyclerPedidos.setHasFixedSize(true);
-        final AdapterProduto adapterPedido = new AdapterProduto(produtos,getActivity());
+        final AdapterProduto adapterPedido = new AdapterProduto(produtos,getActivity()); //trocar para adapaterPedidos
         recyclerPedidos.setAdapter(adapterPedido);
 
         //Recupera dados do Firebase
         DatabaseReference pedidosRef = firebaseref
-                .child("Teste");
+                .child("Teste");//Trocar para pedidos
         pedidosRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
