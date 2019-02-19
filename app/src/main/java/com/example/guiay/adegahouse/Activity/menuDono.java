@@ -38,7 +38,8 @@ public class menuDono extends AppCompatActivity implements NavigationView.OnNavi
 
         autenticacao = ConfiguracaoFirebase.getFirebaseAutentificacao();
 
-        //Configurar o Bottom Navigation View
+        //Configurar o Bottom Navigation Viewfugvvgjvj
+        //ihiugyg8ygp8yig
         configuraBottomNavigation();
 
 
