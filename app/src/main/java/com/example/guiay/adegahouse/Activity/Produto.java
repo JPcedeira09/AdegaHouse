@@ -1,6 +1,8 @@
 package com.example.guiay.adegahouse.Activity;
 
-public class Produto {
+import java.io.Serializable;
+
+public class Produto implements Serializable {
 
     private String descricao;
     private boolean disponivel;

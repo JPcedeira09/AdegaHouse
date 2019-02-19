@@ -10,11 +10,15 @@ import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 
 
 import com.example.guiay.adegahouse.Adapter.AdapterProduto;
+import com.example.guiay.adegahouse.InformacoesProduto;
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
+import com.example.guiay.adegahouse.listener.RecyclerItemClickListener;
 import com.example.guiay.adegahouse.model.Usuario;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -57,7 +61,7 @@ public class TelaCardapio1 extends AppCompatActivity {
 
         recuperarProdutos();
 
-        //Selecionar Produto
+
 
 
     }
@@ -98,6 +102,32 @@ public class TelaCardapio1 extends AppCompatActivity {
                 System.out.print(databaseError.toException());
             }
         });
+        //Configurando evendo de click no produto
+        recyclerProdutosCardapio.addOnItemTouchListener(
+                new RecyclerItemClickListener(
+                        this,
+                        recyclerProdutosCardapio,
+                        new RecyclerItemClickListener.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(View view, int position) {
+                                Produto produtoSelecionado = produtos.get(position);
+                                Intent i = new Intent(TelaCardapio1.this, InformacoesProduto.class);
+                                i.putExtra("informações", produtoSelecionado);
+                                startActivity(i);
+                            }
+
+                            @Override
+                            public void onLongItemClick(View view, int position) {
+
+                            }
+
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                            }
+                        }
+                )
+        );
     }
 
     @Override
