@@ -41,4 +41,14 @@ public class ValoresPedido {
     public void setPedidoAceite(Boolean pedidoAceite) {
         this.pedidoAceite = pedidoAceite;
     }
+
+    @Override
+    public String toString() {
+        return "ValoresPedido{" +
+                "valorTotalProduto=" + valorTotalProduto +
+                ", dataPedido='" + dataPedido + '\'' +
+                ", statusPedido='" + statusPedido + '\'' +
+                ", pedidoAceite=" + pedidoAceite +
+                '}';
+    }
 }

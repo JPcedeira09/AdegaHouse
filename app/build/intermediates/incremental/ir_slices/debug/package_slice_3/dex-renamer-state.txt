@@ -1,4 +1,4 @@
-#Tue Feb 19 15:06:54 BRT 2019
+#Wed Feb 20 16:58:42 BRT 2019
 base.0=C\:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
 path.0=classes.dex
 renamed.0=classes.dex

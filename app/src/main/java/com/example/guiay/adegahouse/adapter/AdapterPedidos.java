@@ -21,14 +21,12 @@ import java.util.List;
 
 public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHolder> {
 
-    private List<Pedido> pedidos;
+    private List<Pedido> listaPedidos;
     private Context context;
 
-
     public AdapterPedidos(List<Pedido> pp, Context cc) {
-        this.pedidos = pp;
+        this.listaPedidos = pp;
         this.context = cc;
-
     }
 
     @NonNull
@@ -41,17 +39,18 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        Pedido pedido = pedidos.get(position);
-        holder.pedido.setText(pedido.getItensCarrinho());
-        holder.pedido.setText((CharSequence) pedido.getUsuario());
-        holder.valorFinal.setText("R$ " + pedido.getValorTotal());
+        Pedido pedido = listaPedidos.get(position);
+        System.out.println("O PEDIDO QUE CHEGA AQUI NO ADAPTER E ASSIM ->>>>" + pedido.toString());
+        holder.textHora.setText(pedido.getValoresPedido().getDataPedido());
+        holder.textPedidoN.setText("III"+position+" - " +  pedido.getDadosCliente().getNome());
+        holder.textPreco.setText("R$ " + pedido.getValoresPedido().getValorTotalProduto());
     }
 
     @Override
     public int getItemCount() {
 
 
-        return pedidos.size();
+        return listaPedidos.size();
     }
     //Fazendo o alertDialog
    /* public void abrirAlerta(View view){
@@ -81,17 +80,18 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView pedido;
-        TextView valorFinal;
-        TextView data;
-        Button status;
+        TextView textPedidoN;
+        TextView textPreco;
+        Button buttonStatus;
+        TextView textHora;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            pedido = itemView.findViewById(R.id.textPedidoN);
-            valorFinal = itemView.findViewById(R.id.textPreco);
-            status = itemView.findViewById(R.id.buttonStatus);
+            textPedidoN = itemView.findViewById(R.id.textPedidoN);
+            textPreco = itemView.findViewById(R.id.textPreco);
+            buttonStatus = itemView.findViewById(R.id.buttonStatus);
+            textHora = itemView.findViewById(R.id.textHora);
         }
     }
 }

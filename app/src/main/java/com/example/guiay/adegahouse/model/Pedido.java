@@ -4,36 +4,49 @@ package com.example.guiay.adegahouse.model;
 import java.lang.reflect.Array;
 import java.util.List;
 
+
 public class Pedido {
-    private String itensCarrinho;
-    private double valorTotal;
-    private Usuario usuario;
+    private List<ItensPedido> Itens;
+    private ValoresPedido ValoresPedido;
+    private DadosCliente DadosClientes;
+
+
+
 
     public Pedido() {
 
     }
 
-    public String getItensCarrinho() {
-        return itensCarrinho;
+    public List<ItensPedido> getItens() {
+        return Itens;
     }
 
-    public void setItensCarrinho(String itensCarrinho) {
-        this.itensCarrinho = itensCarrinho;
+    public void setItens(List<ItensPedido> itens) {
+        Itens = itens;
     }
 
-    public double getValorTotal() {
-        return valorTotal;
+    public com.example.guiay.adegahouse.model.ValoresPedido getValoresPedido() {
+        return ValoresPedido;
     }
 
-    public void setValorTotal(double valorTotal) {
-        this.valorTotal = valorTotal;
+    public void setValoresPedido(com.example.guiay.adegahouse.model.ValoresPedido valoresPedido) {
+        ValoresPedido = valoresPedido;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public DadosCliente getDadosCliente() {
+        return DadosClientes;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setDadosCliente(DadosCliente DadosClientes) {
+        this.DadosClientes = DadosClientes;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "Itens=" + Itens +
+                ", ValoresPedido=" + ValoresPedido +
+                ", DadosClientes=" + DadosClientes +
+                '}';
     }
 }

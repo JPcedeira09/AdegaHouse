@@ -4,6 +4,7 @@ public class Usuario {
     private String nome;
     private String Email;
     private String Senha;
+    //private DadosCliente dadosCliente;
 
     public Usuario() {
     }
@@ -31,4 +32,12 @@ public class Usuario {
     public void setSenha(String senha) {
         Senha = senha;
     }
+
+    /*public DadosCliente getDadosCliente() {
+        return dadosCliente;
+    }
+
+    public void setDadosCliente(DadosCliente dadosCliente) {
+        this.dadosCliente = dadosCliente;
+    }*/
 }
