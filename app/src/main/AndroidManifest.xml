@@ -25,7 +25,8 @@
             android:parentActivityName=".Activity.TelaCardapio1" />
         <activity android:name=".Activity.CarrinhoActivity" />
         <activity android:name=".Activity.P" />
-        <activity android:name=".InformacoesProduto"></activity>
+        <activity android:name=".InformacoesProduto" />
+        <activity android:name=".Adapter.AdapterProdutoInfo"></activity>
     </application>
 
 </manifest>
