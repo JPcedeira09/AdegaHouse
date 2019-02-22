@@ -1,17 +1,23 @@
 package com.example.guiay.adegahouse.fragment;
 
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.guiay.adegahouse.R;
+import com.example.guiay.adegahouse.activity.PopActivity;
 import com.example.guiay.adegahouse.adapter.AdapterPedidos;
 import com.example.guiay.adegahouse.adapter.AdapterProduto;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
@@ -37,6 +43,7 @@ public class pedidosRealizadosFragment extends Fragment {
     private RecyclerView recyclerPedidos;
     private List<Pedido> listaPedidos = new ArrayList<>();
 
+
     public pedidosRealizadosFragment() {
 
     }
@@ -51,12 +58,17 @@ public class pedidosRealizadosFragment extends Fragment {
         recyclerPedidos = view.findViewById(R.id.recyclerPedido);
         firebaseref = ConfiguracaoFirebase .getFirebase();
 
+
         //Configuraçoes do RecyclerView
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerPedidos.setLayoutManager(layoutManager);
         recyclerPedidos.setHasFixedSize(true);
         final AdapterPedidos adapterPedido = new AdapterPedidos(listaPedidos,getActivity());
         recyclerPedidos.setAdapter(adapterPedido);
+
+
+
+
 
         //Recupera dados do Firebase
         DatabaseReference pedidosRef = firebaseref
@@ -94,13 +106,6 @@ public class pedidosRealizadosFragment extends Fragment {
 
                     System.out.println(itensPedidos.toString());
 
-//                    System.out.println("");
-//                    System.out.println("");
-//                    System.out.println("ESEE E A PORRA DO PEDIDO E ASSIM QUE SE FAZ");
-//                    System.out.println(pedido.toString());
-//                    System.out.println("ESEE E A PORRA DO PEDIDO E ASSIM QUE SE FAZ");
-//                    System.out.println("");
-//                    System.out.println("");
 
                     listaPedidos.add(pedido);
                 }

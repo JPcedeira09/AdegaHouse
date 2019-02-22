@@ -1106,6 +1106,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pop_bg
 drawable side_nav_bar
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1426,6 +1427,7 @@ layout activity_login
 layout activity_menu_dono
 layout activity_pedidos_cardapio
 layout activity_pedidos_estoque
+layout activity_pop
 layout adapter_pedidos
 layout adapter_produto
 layout app_bar_menu_dono
