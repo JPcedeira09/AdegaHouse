@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.PopActivity"></activity>
+        <activity android:name=".adapter.AdapterMostra"></activity>
+        <activity android:name=".activity.MostraPedido" />
+        <activity android:name=".activity.Slider" />
+        <activity
+            android:name=".activity.PopActivity"
+            android:theme="@style/AppTheme.PopUP" />
         <activity
             android:name=".activity.menuDono"
             android:label="@string/title_activity_menu_dono"

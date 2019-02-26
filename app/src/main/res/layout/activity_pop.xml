@@ -7,4 +7,80 @@
     android:background="@drawable/pop_bg"
     tools:context=".activity.PopActivity">
 
+    <TextView
+        android:id="@+id/textPergunta"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Qual e o status do pedido do cliente ?"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAceito"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Aceito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPergunta" />
+
+    <Button
+        android:id="@+id/buttonNegado"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:text="Negado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAceito" />
+
+    <Button
+        android:id="@+id/buttonPreparo"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:text="Em preparo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNegado" />
+
+    <Button
+        android:id="@+id/buttonPronto"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:text="Pronto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPreparo" />
+
+    <Button
+        android:id="@+id/buttonTransito"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:text="Em transito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPronto" />
+
+    <Button
+        android:id="@+id/buttonEntregue"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="185dp"
+        android:text="Entregue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTransito" />
+
 </android.support.constraint.ConstraintLayout>

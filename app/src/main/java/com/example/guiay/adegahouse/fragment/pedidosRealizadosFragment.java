@@ -14,10 +14,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 
 import com.example.guiay.adegahouse.R;
+import com.example.guiay.adegahouse.activity.MostraPedido;
 import com.example.guiay.adegahouse.activity.PopActivity;
+import com.example.guiay.adegahouse.activity.Slider;
 import com.example.guiay.adegahouse.adapter.AdapterPedidos;
 import com.example.guiay.adegahouse.adapter.AdapterProduto;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
@@ -33,6 +36,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.ifood.cursoandroid.ifoodprojeto.listener.RecyclerItemClickListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,6 +71,27 @@ public class pedidosRealizadosFragment extends Fragment {
         final AdapterPedidos adapterPedido = new AdapterPedidos(listaPedidos,getActivity());
         recyclerPedidos.setAdapter(adapterPedido);
 
+        //Evento de click no recylerView
+        recyclerPedidos.addOnItemTouchListener( new RecyclerItemClickListener(getActivity(), recyclerPedidos,
+                new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+                        startActivity(new Intent(getActivity(), MostraPedido.class));
+
+                    }
+
+                    @Override
+                    public void onLongItemClick(View view, int position) {
+
+
+                    }
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                    }
+                }));
+
 
 
 
@@ -78,11 +104,12 @@ public class pedidosRealizadosFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 listaPedidos.clear();
 
+
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
 
                     Pedido pedido = new Pedido();
                     System.out.println("");
-                    System.out.println("");
+                    System.out.println(ds);
                     System.out.println("");
 
                     final DataSnapshot valoresPedidoDS = ds.child("ValoresPedido");
@@ -93,13 +120,14 @@ public class pedidosRealizadosFragment extends Fragment {
                     final DataSnapshot dadosClienteDS = ds.child("DadosCliente");
                     DadosCliente dadosCliente = dadosClienteDS.getValue(DadosCliente.class);
                     System.out.println(dadosCliente.toString());
-                    pedido.setDadosCliente(dadosCliente);
+                    pedido.setDadosClientes(dadosCliente);
 
                     final DataSnapshot itensDS = ds.child("Itens");
                     List<ItensPedido> itensPedidos = new ArrayList<ItensPedido>();
                     for(DataSnapshot dsItem : itensDS.getChildren()){
                         ItensPedido itensPedido = dsItem.getValue(ItensPedido.class);
                         itensPedidos.add(itensPedido);
+
                     }
 
                     pedido.setItens(itensPedidos);

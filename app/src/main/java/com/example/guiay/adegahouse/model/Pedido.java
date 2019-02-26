@@ -6,6 +6,7 @@ import java.util.List;
 
 
 public class Pedido {
+    private String key;
     private List<ItensPedido> Itens;
     private ValoresPedido ValoresPedido;
     private DadosCliente DadosClientes;
@@ -15,6 +16,14 @@ public class Pedido {
 
     public Pedido() {
 
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public List<ItensPedido> getItens() {
@@ -33,20 +42,22 @@ public class Pedido {
         ValoresPedido = valoresPedido;
     }
 
-    public DadosCliente getDadosCliente() {
+    public DadosCliente getDadosClientes() {
         return DadosClientes;
     }
 
-    public void setDadosCliente(DadosCliente DadosClientes) {
-        this.DadosClientes = DadosClientes;
+    public void setDadosClientes(DadosCliente dadosClientes) {
+        DadosClientes = dadosClientes;
     }
 
     @Override
     public String toString() {
         return "Pedido{" +
-                "Itens=" + Itens +
+                "key='" + key + '\'' +
+                ", Itens=" + Itens +
                 ", ValoresPedido=" + ValoresPedido +
                 ", DadosClientes=" + DadosClientes +
                 '}';
     }
 }
+

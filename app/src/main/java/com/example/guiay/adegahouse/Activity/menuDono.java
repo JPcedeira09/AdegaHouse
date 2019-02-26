@@ -4,11 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -20,6 +17,11 @@ import android.view.MenuItem;
 
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
+import com.example.guiay.adegahouse.fragment.EditPerfilFragment;
+import com.example.guiay.adegahouse.fragment.EnviarEmailFragment;
+import com.example.guiay.adegahouse.fragment.ListaHistoricoFragment;
+import com.example.guiay.adegahouse.fragment.PoliticasUsoFragment;
+import com.example.guiay.adegahouse.fragment.PromocoesFragment;
 import com.example.guiay.adegahouse.fragment.addProdutosFragment;
 import com.example.guiay.adegahouse.fragment.estoqueFragment;
 import com.example.guiay.adegahouse.fragment.pedidosRealizadosFragment;
@@ -119,17 +121,37 @@ public class menuDono extends AppCompatActivity implements NavigationView.OnNavi
         int id = item.getItemId();
 
         if (id == R.id.promocoes_dono) {
-
+            PromocoesFragment promocoesFragment = new PromocoesFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.viewPage, promocoesFragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.enviar_email) {
+            EnviarEmailFragment enviarEmailFragment = new EnviarEmailFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.viewPage, enviarEmailFragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.edit_perfil) {
+            EditPerfilFragment editPerfilFragment = new EditPerfilFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.viewPage, editPerfilFragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.lista_historico) {
+            ListaHistoricoFragment listaHistoricoFragment = new ListaHistoricoFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.viewPage, listaHistoricoFragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.como_usar) {
+            startActivity(new Intent(this, Slider.class));
 
         } else if (id == R.id.politicas_uso) {
+            PoliticasUsoFragment politicasUsoFragment = new PoliticasUsoFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.viewPage, politicasUsoFragment);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.sair) {
             autenticacao.signOut();

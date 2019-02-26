@@ -30,7 +30,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.guiay.adegahouse.activity.PopActivity" />
+        <activity android:name="com.example.guiay.adegahouse.activity.MostraPedido" />
+        <activity android:name="com.example.guiay.adegahouse.activity.Slider" />
+        <activity
+            android:name="com.example.guiay.adegahouse.activity.PopActivity"
+            android:theme="@style/AppTheme.PopUP" />
         <activity
             android:name="com.example.guiay.adegahouse.activity.menuDono"
             android:label="@string/title_activity_menu_dono"

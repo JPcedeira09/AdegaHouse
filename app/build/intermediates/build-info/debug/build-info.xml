@@ -6,13 +6,13 @@
     density="560dpi"
     format="10"
     plugin-version="3.3.1"
-    timestamp="1550853850773"
+    timestamp="1551188716302"
     token="3063501757992314706"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="951" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -23,6 +23,9 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
@@ -57,16 +60,16 @@
         location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1550853850773"
+        timestamp="1551188716302"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
@@ -99,9 +102,6 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\kaue_\Documents\AdegaHouse\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
