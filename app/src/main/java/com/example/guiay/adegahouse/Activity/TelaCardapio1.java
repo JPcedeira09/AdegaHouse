@@ -112,7 +112,7 @@ public class TelaCardapio1 extends AppCompatActivity {
                             public void onItemClick(View view, int position) {
                                 Produto produtoSelecionado = produtos.get(position);
                                 Intent i = new Intent(TelaCardapio1.this, InformacoesProduto.class);
-                                i.putExtra("informações", produtoSelecionado);
+                                i.putExtra("produtoSelecionado", produtoSelecionado);
                                 startActivity(i);
                             }
 
