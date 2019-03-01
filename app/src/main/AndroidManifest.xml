@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".adapter.AdapterMostra"></activity>
         <activity android:name=".activity.MostraPedido" />
-        <activity android:name=".activity.Slider" />
+        <activity android:name=".activity.Slider" android:theme="@style/Theme.Intro" />
         <activity
             android:name=".activity.PopActivity"
             android:theme="@style/AppTheme.PopUP" />

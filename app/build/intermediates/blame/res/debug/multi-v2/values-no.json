@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-no\\values-no.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\values-no\\values-no.xml",
+                    "from": {
+                        "startLines": "2,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,220,284,346,423,489",
+                        "endLines": "5,6,7,8,9,10",
+                        "endColumns": "14,63,61,76,65,58",
+                        "endOffsets": "215,279,341,418,484,543"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 package com.example.guiay.adegahouse.model;
 
-public class ItensPedido {
+
+
+public class ItensPedido  {
 
     private Long qtd;
     private String nome;

@@ -34,6 +34,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.Externalizable;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,6 +49,7 @@ public class pedidosRealizadosFragment extends Fragment {
     private DatabaseReference firebaseref;
     private RecyclerView recyclerPedidos;
     private List<Pedido> listaPedidos = new ArrayList<>();
+
 
 
     public pedidosRealizadosFragment() {
@@ -94,12 +97,11 @@ public class pedidosRealizadosFragment extends Fragment {
 
 
 
-
-
         //Recupera dados do Firebase
         DatabaseReference pedidosRef = firebaseref
                 .child("Pedidos");
-        pedidosRef.addListenerForSingleValueEvent(new ValueEventListener() {
+
+        pedidosRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 listaPedidos.clear();
@@ -108,18 +110,14 @@ public class pedidosRealizadosFragment extends Fragment {
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
 
                     Pedido pedido = new Pedido();
-                    System.out.println("");
-                    System.out.println(ds);
-                    System.out.println("");
+
 
                     final DataSnapshot valoresPedidoDS = ds.child("ValoresPedido");
                     ValoresPedido valoresPedido = valoresPedidoDS.getValue(ValoresPedido.class);
-                    System.out.println(valoresPedido.toString());
                     pedido.setValoresPedido(valoresPedido);
 
                     final DataSnapshot dadosClienteDS = ds.child("DadosCliente");
                     DadosCliente dadosCliente = dadosClienteDS.getValue(DadosCliente.class);
-                    System.out.println(dadosCliente.toString());
                     pedido.setDadosClientes(dadosCliente);
 
                     final DataSnapshot itensDS = ds.child("Itens");
@@ -132,7 +130,7 @@ public class pedidosRealizadosFragment extends Fragment {
 
                     pedido.setItens(itensPedidos);
 
-                    System.out.println(itensPedidos.toString());
+
 
 
                     listaPedidos.add(pedido);

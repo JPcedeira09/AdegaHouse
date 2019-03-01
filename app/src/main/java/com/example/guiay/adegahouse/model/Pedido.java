@@ -1,11 +1,14 @@
 package com.example.guiay.adegahouse.model;
 
 
+import java.io.Externalizable;
+import java.io.Serializable;
 import java.lang.reflect.Array;
+import java.security.Key;
 import java.util.List;
 
 
-public class Pedido {
+public  class Pedido {
     private String key;
     private List<ItensPedido> Itens;
     private ValoresPedido ValoresPedido;
@@ -53,7 +56,7 @@ public class Pedido {
     @Override
     public String toString() {
         return "Pedido{" +
-                "key='" + key + '\'' +
+                "Id='" + key + '\'' +
                 ", Itens=" + Itens +
                 ", ValoresPedido=" + ValoresPedido +
                 ", DadosClientes=" + DadosClientes +

@@ -8,6 +8,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\drawable\\design_snackbar_background.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-mdpi-v4\\mi_ic_previous.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_email_cinza_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_email_cinza_24dp.png"
     },
@@ -60,12 +64,12 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
-    },
-    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sair_circle_black_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sair_circle_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
@@ -144,6 +148,14 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xhdpi-v4\\mi_ic_next.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xxxhdpi-v17\\mi_ic_skip.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_ripple_color.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\color\\mtrl_btn_text_btn_ripple_color.xml"
     },
@@ -200,8 +212,16 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\fragment_edit_perfil.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-anydpi-v21_mi_ic_skip.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-anydpi-v21\\mi_ic_skip.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_cadeado_cinza_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_cadeado_cinza_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-mdpi-v17\\mi_ic_previous.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -244,6 +264,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_dois.png.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\drawable-v21\\dois.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
@@ -278,6 +302,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xhdpi-v17\\mi_ic_previous.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -358,6 +386,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_push_notification_preto_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_push_notification_preto_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxhdpi-v4\\mi_ic_previous.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -548,6 +580,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\922efa2f07876637983092a34dda807f\\res\\layout\\notification_template_big_media.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-ldpi-v17_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-ldpi-v17\\mi_ic_next.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\layout\\abc_action_mode_bar.xml"
     },
@@ -580,12 +616,20 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldpi-v4\\mi_ic_previous.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_mi_shake.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\anim\\mi_shake.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
@@ -604,12 +648,20 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xxhdpi-v17\\mi_ic_skip.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_mi_fragment_simple_slide.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\layout\\mi_fragment_simple_slide.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_push_notification_preto_24dp.png.flat",
@@ -688,6 +740,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\color\\mtrl_btn_text_color_selector.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mi_ic_finish.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xhdpi-v4\\mi_ic_finish.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
@@ -730,6 +786,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxhdpi-v4\\mi_ic_skip.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_lista_preto_24dp.png.flat",
@@ -940,8 +1000,16 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_mi_ic_next.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-anydpi-v21\\mi_ic_next.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_subheader.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-mdpi-v4\\mi_ic_next.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -992,8 +1060,20 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\toolbar.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldpi-v4\\mi_ic_next.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_mostra.xml.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\adapter_mostra.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_mi_fade_out.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\anim\\mi_fade_out.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add_preto_24dp.png.flat",
@@ -1008,12 +1088,24 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_quatro.png.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\drawable-v21\\quatro.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-mdpi-v17\\mi_ic_next.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-hdpi-v4\\mi_ic_skip.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
@@ -1030,6 +1122,14 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-hdpi-v17\\mi_ic_next.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-hdpi-v17\\mi_ic_skip.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_pop_enter_anim.xml.flat",
@@ -1076,6 +1176,10 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_politicas_de_uso_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_mi_fade_in.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\anim\\mi_fade_in.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_add_preto_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_preto_24dp.png"
     },
@@ -1112,12 +1216,12 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_promocoes.xml.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\fragment_promocoes.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
@@ -1144,6 +1248,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-hdpi-v4\\mi_ic_next.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
@@ -1154,6 +1262,14 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_mi_fragment_simple_slide_scrollable.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\layout-land\\mi_fragment_simple_slide_scrollable.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_tres.png.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\drawable-v21\\tres.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
@@ -1304,12 +1420,24 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mi_button_background.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable\\mi_button_background.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xhdpi-v17\\mi_ic_next.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxxhdpi-v4\\mi_ic_next.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
@@ -1376,12 +1504,16 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_politicas_de_uso_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_dono.xml.flat",
-        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\menu\\menu_dono.xml"
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxxhdpi-v4\\mi_ic_skip.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_lista_historico.xml.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\fragment_lista_historico.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_dono.xml.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\menu\\menu_dono.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
@@ -1484,12 +1616,24 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mi_ic_finish.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxhdpi-v4\\mi_ic_finish.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xhdpi-v4\\mi_ic_previous.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_sair_circle_black_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_sair_circle_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xxxhdpi-v17\\mi_ic_next.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
@@ -1520,6 +1664,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-ldpi-v17_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-ldpi-v17\\mi_ic_skip.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
@@ -1546,6 +1694,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xhdpi-v4\\mi_ic_skip.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
@@ -1620,6 +1772,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-anydpi-v21_mi_ic_previous.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-anydpi-v21\\mi_ic_previous.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
@@ -1630,6 +1786,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\828c0845285bafe11d878e51942c0297\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_um.png.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\drawable-v21\\um.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
@@ -1676,6 +1836,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-hdpi-v4\\mi_ic_previous.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -1720,8 +1884,20 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_email_cinza_24dp.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xxxhdpi-v17\\mi_ic_previous.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mi_ic_finish.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-hdpi-v4\\mi_ic_finish.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxxhdpi-v4\\mi_ic_previous.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1800,6 +1976,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_mi_ic_skip.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-anydpi-v21\\mi_ic_skip.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -1856,12 +2036,20 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xhdpi-v17\\mi_ic_skip.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_mi_fragment_simple_slide_scrollable.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\layout\\mi_fragment_simple_slide_scrollable.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -1872,16 +2060,20 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_mi_cycle_2.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\anim\\mi_cycle_2.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
-        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2028,6 +2220,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_mi_activity_intro.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\layout\\mi_activity_intro.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\anim\\abc_slide_in_top.xml"
     },
@@ -2036,16 +2232,20 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_slider.xml.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\activity_slider.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-mdpi-v17\\mi_ic_skip.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_design_tint_password_toggle.xml.flat",
@@ -2240,6 +2440,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldpi-v4\\mi_ic_skip.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
@@ -2254,6 +2458,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mi_ic_finish.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-mdpi-v4\\mi_ic_finish.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
@@ -2304,6 +2512,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mi_ic_next_finish.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable\\mi_ic_next_finish.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -2332,8 +2544,16 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mi_ic_skip.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-mdpi-v4\\mi_ic_skip.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-hdpi-v17\\mi_ic_previous.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -2342,6 +2562,14 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mi_ic_finish.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxxhdpi-v4\\mi_ic_finish.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_mi_button_background.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-v21\\mi_button_background.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -2366,6 +2594,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-xxhdpi-v4\\mi_ic_next.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_email_cinza_24dp.png.flat",
@@ -2398,6 +2630,10 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-ldpi-v17_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-ldpi-v17\\mi_ic_previous.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -2444,6 +2680,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_mi_ic_next.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xxhdpi-v17\\mi_ic_next.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\color\\abc_btn_colored_text_material.xml"
     },
@@ -2480,6 +2720,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\interpolator\\mtrl_fast_out_linear_in.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-anydpi-v21_mi_ic_next.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-anydpi-v21\\mi_ic_next.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
@@ -2508,6 +2752,10 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_mi_ic_previous.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-anydpi-v21\\mi_ic_previous.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_pessoa_cinza_24dp.png.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_pessoa_cinza_24dp.png"
     },
@@ -2520,8 +2768,16 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mi_ic_finish.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldpi-v4\\mi_ic_finish.png"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_mi_fragment_simple_slide.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\layout-land\\mi_fragment_simple_slide.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_sair_circle_black_24dp.png.flat",
@@ -2572,6 +2828,10 @@
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_lista_preto_24dp.png"
     },
     {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_mi_ic_finish.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-anydpi-v21\\mi_ic_finish.xml"
+    },
+    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
@@ -2614,5 +2874,9 @@
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_mi_ic_previous.png.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\drawable-ldrtl-xxhdpi-v17\\mi_ic_previous.png"
     }
 ]

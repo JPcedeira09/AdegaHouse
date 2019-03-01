@@ -13,8 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.guiay.adegahouse.R;
+import com.example.guiay.adegahouse.activity.Login;
 import com.example.guiay.adegahouse.activity.PedidosCardapio;
 import com.example.guiay.adegahouse.activity.PopActivity;
 import com.example.guiay.adegahouse.model.Pedido;
@@ -47,6 +49,7 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
         holder.textHora.setText(pedido.getValoresPedido().getDataPedido());
         holder.textPedidoN.setText(position +   pedido.getDadosClientes().getNome());
         holder.textValor.setText("R$ " + String.valueOf (pedido.getValoresPedido().getValorTotalProduto()));
+
         holder.buttonStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +57,7 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
                 context.getApplicationContext().startActivity(i);
             }
         });
+
 
     }
 

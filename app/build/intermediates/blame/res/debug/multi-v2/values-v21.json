@@ -23,6 +23,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\material-intro-1.6.2.aar\\b16831f60282838393cb8e7389039ce4\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "345"
+                    },
+                    "to": {
+                        "startLines": "319",
+                        "startColumns": "4",
+                        "startOffsets": "22642",
+                        "endLines": "323",
+                        "endColumns": "12",
+                        "endOffsets": "22932"
+                    }
+                },
+                {
                     "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "3",
@@ -71,12 +90,12 @@
                         "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,271,272,279,283,319,322",
+                        "startLines": "2,3,4,5,271,272,279,283,324,327",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,19767,19883,20340,20634,22642,22814",
-                        "endLines": "2,3,4,5,271,272,279,283,321,326",
+                        "startOffsets": "55,159,223,290,19767,19883,20340,20634,22937,23109",
+                        "endLines": "2,3,4,5,271,272,279,283,326,331",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,19878,20004,20461,20757,22809,23147"
+                        "endOffsets": "154,218,285,349,19878,20004,20461,20757,23104,23442"
                     }
                 },
                 {
