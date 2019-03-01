@@ -49,6 +49,7 @@ public class AdapterProduto extends RecyclerView.Adapter<AdapterProduto.MyViewHo
 
     @Override
     public int getItemCount() {
+
         return produtos.size();
     }
 

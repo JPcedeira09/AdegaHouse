@@ -102,7 +102,10 @@ public class TelaCardapio1 extends AppCompatActivity {
                 System.out.print(databaseError.toException());
             }
         });
-        //Configurando evendo de click no produto
+
+
+
+        //------------------------Configurando evendo de click no produto do recyclerView-------------------------------
         recyclerProdutosCardapio.addOnItemTouchListener(
                 new RecyclerItemClickListener(
                         this,
