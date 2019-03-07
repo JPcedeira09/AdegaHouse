@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.model.Produto;
+import com.example.guiay.adegahouse.util.ProdutoFirebase;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,11 +37,12 @@ public class addProdutosFragment extends Fragment {
         }
     public void salvar(Produto produto){
 
-        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-                firebaseRef
-                .child("Teste")//trocar para produto
-                .child(produto.getNome())
-                .setValue(produto);
+
+//        DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
+//                firebaseRef
+//                .child("Teste")//trocar para produto
+//                .child(produto.getNome())
+//                .setValue(produto);
 
     }
 
@@ -99,7 +101,9 @@ public class addProdutosFragment extends Fragment {
                                     produto.setDescricao(descricao);
                                     produto.setQuantidade(quantidade);
                                     produto.setValor(valor);
-                                    salvar(produto);
+                                    ProdutoFirebase.create(produto);
+
+//                                    salvar(produto);
                                     Toast.makeText(getActivity(),"Cadastro realizado com sucesso",Toast.LENGTH_SHORT).show();
 
 

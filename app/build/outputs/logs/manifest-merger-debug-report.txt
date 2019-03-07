@@ -142,20 +142,18 @@ MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] C:\Us
 		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.guiay.adegahouse.adapter.AdapterMostra
-ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:12:9-68
+activity#com.example.guiay.adegahouse.activity.Slider
+ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:12:9-62
 	android:name
-		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:12:19-56
-activity#com.example.guiay.adegahouse.activity.MostraPedido
+		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:12:19-50
+activity#com.example.guiay.adegahouse.adapter.AdapterMostra
 ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:13:9-59
 	android:name
 		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:13:19-56
-activity#com.example.guiay.adegahouse.activity.Slider
-ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:14:9-88
-	android:theme
-		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:14:51-85
+activity#com.example.guiay.adegahouse.activity.MostraPedido
+ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:14:9-59
 	android:name
-		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:14:19-50
+		ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:14:19-56
 activity#com.example.guiay.adegahouse.activity.PopActivity
 ADDED from C:\Users\kaue_\Documents\AdegaHouse\app\src\main\AndroidManifest.xml:15:9-17:53
 	android:theme

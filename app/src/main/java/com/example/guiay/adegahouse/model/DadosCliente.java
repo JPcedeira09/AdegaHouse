@@ -1,6 +1,11 @@
 package com.example.guiay.adegahouse.model;
 
-public class DadosCliente {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+public class DadosCliente implements Serializable, Parcelable {
 
     private String complemento;
     private String endereco;
@@ -14,6 +19,29 @@ public class DadosCliente {
     public DadosCliente() {
 
     }
+
+    protected DadosCliente(Parcel in) {
+        complemento = in.readString();
+        endereco = in.readString();
+        numero = in.readString();
+        cpf = in.readString();
+        celular = in.readString();
+        cep = in.readString();
+        nome = in.readString();
+        email = in.readString();
+    }
+
+    public static final Creator<DadosCliente> CREATOR = new Creator<DadosCliente>() {
+        @Override
+        public DadosCliente createFromParcel(Parcel in) {
+            return new DadosCliente(in);
+        }
+
+        @Override
+        public DadosCliente[] newArray(int size) {
+            return new DadosCliente[size];
+        }
+    };
 
     public String getComplemento() {
         return complemento;
@@ -91,5 +119,22 @@ public class DadosCliente {
                 ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(complemento);
+        dest.writeString(endereco);
+        dest.writeString(numero);
+        dest.writeString(cpf);
+        dest.writeString(celular);
+        dest.writeString(cep);
+        dest.writeString(nome);
+        dest.writeString(email);
     }
 }

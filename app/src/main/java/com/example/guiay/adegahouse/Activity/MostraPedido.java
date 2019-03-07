@@ -24,6 +24,7 @@ import java.util.List;
 public class MostraPedido extends AppCompatActivity {
 
     private DatabaseReference firebaseRef;
+    private Pedido pedidoSelecionado;
     private RecyclerView recycler;
     private List<Pedido> listaMPedidos = new ArrayList<>();
     //private TextView textEndereco, textEnderecoEntrega,textItens,textPagamento,texteAutorizado;
@@ -33,6 +34,11 @@ public class MostraPedido extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostra_pedido);
+
+
+        pedidoSelecionado = (Pedido) getIntent().getSerializableExtra("pedido_selecionado");
+
+        System.out.println(pedidoSelecionado.toString());
 
         //Inicializar Componentes
         firebaseRef = ConfiguracaoFirebase.getFirebase();

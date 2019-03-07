@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adapter.AdapterMostra"></activity>
+        <activity android:name=".activity.Slider"></activity>
+        <activity android:name=".adapter.AdapterMostra" />
         <activity android:name=".activity.MostraPedido" />
-        <activity android:name=".activity.Slider" android:theme="@style/Theme.Intro" />
         <activity
             android:name=".activity.PopActivity"
             android:theme="@style/AppTheme.PopUP" />

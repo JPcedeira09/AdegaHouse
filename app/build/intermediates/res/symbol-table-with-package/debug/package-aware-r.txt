@@ -1269,6 +1269,10 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
+id imageView4
+id imageView5
+id imageView6
 id info
 id invisible
 id italic
@@ -1408,11 +1412,15 @@ id textStart
 id textValorFinal
 id textValorFinalTeste
 id textView
+id textView10
 id textView2
 id textView3
 id textView4
 id textView5
 id textView6
+id textView7
+id textView8
+id textView9
 id textWatcher
 id text_input_password_toggle
 id textinput_counter
@@ -1528,6 +1536,10 @@ layout fragment_lista_historico
 layout fragment_pedidos_realizados
 layout fragment_politicas_uso
 layout fragment_promocoes
+layout intro_1
+layout intro_2
+layout intro_3
+layout intro_4
 layout mi_activity_intro
 layout mi_fragment_simple_slide
 layout mi_fragment_simple_slide_scrollable

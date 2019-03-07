@@ -23,8 +23,8 @@ import com.example.guiay.adegahouse.fragment.ListaHistoricoFragment;
 import com.example.guiay.adegahouse.fragment.PoliticasUsoFragment;
 import com.example.guiay.adegahouse.fragment.PromocoesFragment;
 import com.example.guiay.adegahouse.fragment.addProdutosFragment;
-import com.example.guiay.adegahouse.fragment.estoqueFragment;
-import com.example.guiay.adegahouse.fragment.pedidosRealizadosFragment;
+import com.example.guiay.adegahouse.fragment.EstoqueFragment;
+import com.example.guiay.adegahouse.fragment.PedidosRealizadosFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -67,7 +67,7 @@ public class menuDono extends AppCompatActivity implements NavigationView.OnNavi
         habilitarNavegaçao(bottomNavigationViewEx);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.viewPage, new pedidosRealizadosFragment()).commit();
+        fragmentTransaction.replace(R.id.viewPage, new PedidosRealizadosFragment()).commit();
 
 
     }
@@ -86,10 +86,10 @@ public class menuDono extends AppCompatActivity implements NavigationView.OnNavi
 
                 switch (item.getItemId()) {
                     case R.id.ic_pedidos:
-                        fragmentTransaction.replace(R.id.viewPage, new pedidosRealizadosFragment()).commit();
+                        fragmentTransaction.replace(R.id.viewPage, new PedidosRealizadosFragment()).commit();
                         return true;
                     case R.id.ic_estoque:
-                        fragmentTransaction.replace(R.id.viewPage, new estoqueFragment()).commit();
+                        fragmentTransaction.replace(R.id.viewPage, new EstoqueFragment()).commit();
                         return true;
                     case R.id.ic_adicionar:
                         fragmentTransaction.replace(R.id.viewPage, new addProdutosFragment()).commit();
