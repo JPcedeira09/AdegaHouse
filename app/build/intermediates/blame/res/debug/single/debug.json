@@ -64,12 +64,12 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\11c227f61c7e350ad25ec292456cdb18\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sair_circle_black_24dp.png.flat",
-        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sair_circle_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ff095944a621c27ac277a0c73c56a2e1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sair_circle_black_24dp.png.flat",
+        "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sair_circle_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
@@ -2704,12 +2704,12 @@
         "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
-        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\color\\abc_hint_foreground_material_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\layout_intro_4.xml.flat",
         "source": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\src\\main\\res\\layout\\intro_4.xml"
+    },
+    {
+        "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
+        "source": "C:\\Users\\kaue_\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6da6e881e59727097599b551c70f8848\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\kaue_\\Documents\\AdegaHouse\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",

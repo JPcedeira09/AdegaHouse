@@ -21,13 +21,11 @@ import com.example.guiay.adegahouse.model.Produto;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import br.com.ifood.cursoandroid.ifoodprojeto.listener.RecyclerItemClickListener;
+import com.example.guiay.adegahouse.listerner.RecyclerItemClickListener;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,4 +1,4 @@
-package br.com.ifood.cursoandroid.ifoodprojeto.listener;
+package com.example.guiay.adegahouse.listerner;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
