@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.guiay.adegahouse.MeChupa;
 import com.example.guiay.adegahouse.R;
 import com.example.guiay.adegahouse.config.ConfiguracaoFirebase;
 import com.example.guiay.adegahouse.fragment.EditPerfilFragment;
@@ -145,7 +146,7 @@ public class menuDono extends AppCompatActivity implements NavigationView.OnNavi
             fragmentTransaction.commit();
 
         } else if (id == R.id.como_usar) {
-            startActivity(new Intent(this, Slider.class));
+            startActivity(new Intent(this, MeChupa.class));
 
         } else if (id == R.id.politicas_uso) {
             PoliticasUsoFragment politicasUsoFragment = new PoliticasUsoFragment();

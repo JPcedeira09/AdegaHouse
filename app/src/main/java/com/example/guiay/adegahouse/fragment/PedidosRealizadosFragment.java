@@ -51,7 +51,7 @@ public class PedidosRealizadosFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_pedidos_realizados, container, false);
 
         //Configuraçoes iniciais
-        recyclerPedidos = view.findViewById(R.id.recyclerPedido);
+        /*recyclerPedidos = view.findViewById(R.id.recyclerPedido);
         firebaseref = ConfiguracaoFirebase.getFirebase();
 
 
@@ -67,7 +67,7 @@ public class PedidosRealizadosFragment extends Fragment {
                 new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-                       /* Pedido pedidoSelecionado = listaPedidos.get(position);
+                        Pedido pedidoSelecionado = listaPedidos.get(position);
                         sendData(pedidoSelecionado);
 
 
@@ -76,7 +76,7 @@ public class PedidosRealizadosFragment extends Fragment {
                         PedidosRealizadosFragment fragment = new PedidosRealizadosFragment();
                         Bundle bundle = new Bundle();
                         bundle.putSerializable("pedidoSelecionado", pedidoSelecionado);
-                        fragment.setArguments(bundle);*/
+                        fragment.setArguments(bundle);
 
 
 
@@ -95,7 +95,7 @@ public class PedidosRealizadosFragment extends Fragment {
                 }));
 
 
-        listaPedidos = PedidoFirebase.listAll();
+        //listaPedidos = PedidoFirebase.listAll();
 
         //Recupera dados do Firebase
        /* DatabaseReference pedidosRef = firebaseref
@@ -143,7 +143,7 @@ public class PedidosRealizadosFragment extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
             }
-        });*/
+        });
 
         System.out.println("");
         System.out.println("");
@@ -151,7 +151,7 @@ public class PedidosRealizadosFragment extends Fragment {
         System.out.println(listaPedidos.toString());
 
         System.out.println("");
-        System.out.println("");
+        System.out.println(""); */
 
         return view;
     }

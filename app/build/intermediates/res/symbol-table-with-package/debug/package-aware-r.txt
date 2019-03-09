@@ -1392,11 +1392,13 @@ id teste
 id text
 id text2
 id textAutorizado
+id textDelicia
 id textDescricao
 id textDistancia
 id textDistanciaTeste
 id textEnd
 id textEndEntrega
+id textGostoso
 id textHora
 id textHoraTeste
 id textItens
@@ -1501,6 +1503,7 @@ layout abc_tooltip
 layout activity_cadastro
 layout activity_intro__cadastro
 layout activity_login
+layout activity_me_chupa
 layout activity_menu_dono
 layout activity_mostra_pedido
 layout activity_pedidos_cardapio

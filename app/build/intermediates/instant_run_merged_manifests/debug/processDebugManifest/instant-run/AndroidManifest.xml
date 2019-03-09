@@ -30,6 +30,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.guiay.adegahouse.MeChupa" />
         <activity android:name="com.example.guiay.adegahouse.activity.Slider" />
         <activity android:name="com.example.guiay.adegahouse.adapter.AdapterMostra" />
         <activity android:name="com.example.guiay.adegahouse.activity.MostraPedido" />
