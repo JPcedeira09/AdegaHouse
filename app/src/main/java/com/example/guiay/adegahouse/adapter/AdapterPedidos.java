@@ -48,7 +48,7 @@ public class AdapterPedidos extends RecyclerView.Adapter<AdapterPedidos.MyViewHo
         Pedido pedido = listaPedidos.get(position);
         holder.textHora.setText(pedido.getValoresPedido().getDataPedido());
         holder.textPedidoN.setText(position +   pedido.getDadosClientes().getNome());
-        holder.textValor.setText("R$ " + String.valueOf (pedido.getValoresPedido().getValorTotalProduto()));
+        holder.textValor.setText("R$ " + String.valueOf(pedido.getValoresPedido().getValorTotalProduto()));
 
         holder.buttonStatus.setOnClickListener(new View.OnClickListener() {
             @Override
