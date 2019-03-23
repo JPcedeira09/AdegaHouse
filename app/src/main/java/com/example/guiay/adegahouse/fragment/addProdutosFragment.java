@@ -66,7 +66,8 @@ public class addProdutosFragment extends Fragment {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (dataSnapshot.getValue() !=null){
                         Produto adicionarProduto = dataSnapshot.getValue(Produto.class);
-                        editNome.setText(adicionarProduto.getNome());
+                       editNome.setText(adicionarProduto.getNome());
+
                         editDescricao.setText(adicionarProduto.getDescricao());
                         editQtq.setText(adicionarProduto.getQuantidade());
                         editValor.setText(adicionarProduto.getValor());
