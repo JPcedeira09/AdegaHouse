@@ -26,7 +26,8 @@
         <activity android:name=".Activity.CarrinhoActivity" />
         <activity android:name=".Activity.P" />
         <activity android:name=".InformacoesProduto" />
-        <activity android:name=".Adapter.AdapterProdutoInfo"></activity>
+        <activity android:name=".Adapter.AdapterProdutoInfo" />
+        <activity android:name=".Activity.FragmentsHistoricoEstoque"></activity>
     </application>
 
 </manifest>
