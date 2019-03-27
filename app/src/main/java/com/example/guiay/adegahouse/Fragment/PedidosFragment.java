@@ -13,11 +13,11 @@ import com.example.guiay.adegahouse.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HistoricoFragment extends Fragment {
+public class PedidosFragment extends Fragment {
 
-    private TextView txtHistorico;
+    private TextView txtPedidos;
 
-    public HistoricoFragment() {
+    public PedidosFragment() {
         // Required empty public constructor
     }
 
@@ -26,9 +26,9 @@ public class HistoricoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_historico, container, false);
+        View view = inflater.inflate(R.layout.fragment_pedidos, container, false);
 
-        txtHistorico = view.findViewById(R.id.txtHistorico);
+        txtPedidos = view.findViewById(R.id.txtPedidos);
         return view;
     }
 

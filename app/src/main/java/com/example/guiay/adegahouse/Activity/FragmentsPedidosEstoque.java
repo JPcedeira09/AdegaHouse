@@ -7,22 +7,22 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.guiay.adegahouse.Fragment.EstoqueFragment;
-import com.example.guiay.adegahouse.Fragment.HistoricoFragment;
+import com.example.guiay.adegahouse.Fragment.PedidosFragment;
 import com.example.guiay.adegahouse.R;
 
-public class FragmentsHistoricoEstoque extends AppCompatActivity {
+public class FragmentsPedidosEstoque extends AppCompatActivity {
 
-    private Button buttonEstoque, buttonHistorico;
+    private Button buttonEstoque, buttonPedidos;
     private EstoqueFragment estoqueFragment;
-    private HistoricoFragment historicoFragment;
+    private PedidosFragment pedidosFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragments_historico_estoque);
+        setContentView(R.layout.activity_fragments_pedidos_estoque);
 
         buttonEstoque = findViewById(R.id.buttonEstoque);
-        buttonHistorico = findViewById(R.id.buttonHistorico);
+        buttonPedidos = findViewById(R.id.buttonPedidos);
 
             estoqueFragment = new EstoqueFragment();
 
@@ -43,14 +43,14 @@ public class FragmentsHistoricoEstoque extends AppCompatActivity {
             }
         });
 
-        buttonHistorico.setOnClickListener(new View.OnClickListener() {
+        buttonPedidos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                historicoFragment = new HistoricoFragment();
+                pedidosFragment = new PedidosFragment();
 
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frameConteudo, historicoFragment);
+                transaction.replace(R.id.frameConteudo, pedidosFragment);
                 transaction.commit();
 
             }

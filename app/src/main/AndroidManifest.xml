@@ -27,8 +27,10 @@
         <activity android:name=".Activity.P" />
         <activity android:name=".InformacoesProduto" />
         <activity android:name=".Adapter.AdapterProdutoInfo" />
-        <activity android:name=".Activity.FragmentsHistoricoEstoque" />
-        <activity android:name=".AdapterEstoqueActivity"></activity>
+        <activity android:name=".Activity.FragmentsPedidosEstoque" />
+        <activity android:name=".AdapterEstoqueActivity" />
+        <activity android:name=".AdapterPedidosActivity" />
+        <activity android:name=".PerfilLojaActivity"></activity>
     </application>
 
 </manifest>

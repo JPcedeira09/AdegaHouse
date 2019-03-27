@@ -6,17 +6,27 @@ public class ValoresPedido {
     private String dataPedido;
     private String statusPedido;
     private Boolean pedidoAceite;
+    private String numeroPedido;
 
     public ValoresPedido() {
         super();
     }
 
-    public ValoresPedido(Double valorTotalProduto, String dataPedido, String statusPedido, Boolean pedidoAceite) {
+    public ValoresPedido(Double valorTotalProduto, String dataPedido, String statusPedido, Boolean pedidoAceite, String numeroPedido) {
         super();
         this.valorTotalProduto = valorTotalProduto;
         this.dataPedido = dataPedido;
         this.statusPedido = statusPedido;
         this.pedidoAceite = pedidoAceite;
+        this.numeroPedido = numeroPedido;
+    }
+
+    public String getNumeroPedido() {
+        return numeroPedido;
+    }
+
+    public void setNumeroPedido(String numeroPedido) {
+        this.numeroPedido = numeroPedido;
     }
 
     public Double getValorTotalProduto() {
